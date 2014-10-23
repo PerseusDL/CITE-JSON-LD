@@ -1,1 +1,0 @@
-cat hmt.ttl | egrep -oh " cts:\w+" | sort | uniq > cts.ttl

@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# Adam Tavares
+# 2014-10-23
+#
+# Usage: rdf_isolate source.ttl prefix
+#
+# Find On
+#
+src=$(echo "$1" | sed 's/\/$//'); shift
+pre=$(echo "$1" | sed 's/\/$//'); shift
+cat ${src} | egrep -oh " ${pre}:\w+" | sort | uniq
