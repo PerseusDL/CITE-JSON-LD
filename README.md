@@ -1,7 +1,8 @@
 CITE-JSON-LD
 ============
+ JSON-LD templates that implement the CITE Collection protocol
 
-### JSON-LD templates that implement the CITE Collection protocol
+### Directories explained
 
 * **/templates**
 	* stores working JSON-LD templates
@@ -12,13 +13,15 @@ CITE-JSON-LD
 	* **/samples/other**
 		* stores example CITE Collection data represented in other flat-file formats.
 
-### Useful links:
+### Useful links
 
 * [Perseus CITE Collection Capabilities Files](https://github.com/PerseusDL/cite_collections/tree/master/src/capabilities)
 
 * [Homer Multitext Project: An overview CITE Collection Objects](http://www.homermultitext.org/hmt-doc/cite/)
 
 * [The Homer Multitext and RDF-Based Integration](http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/blackwell-smith/)
+
+* [HMT RDF vocabulary](http://www.homermultitext.org/hmt-doc/standards/rdfvocabulary.html)
 
 * [CITE Collections, Annotations, Triples and Named Graphs](http://folio.furman.edu/projects/cite/four_urls.html)
 
@@ -27,7 +30,6 @@ Use ERB notation in templates
 
 	{
 		"urn": <%= urn %>,
-		...
 	}
 
 Its variable delimiters are not typically found in JSON,
@@ -35,6 +37,8 @@ which will make any template conversion scripts easier to write.
 
 	<%= val %> => {{ val }}
 
-is easier to convert than the inverse...
+is easier to convert than the inverse
 
 	{{ val }} => <%= val %>
+
+### scripts/convert.rb
