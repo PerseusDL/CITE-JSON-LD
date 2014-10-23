@@ -1,0 +1,2 @@
+### capabilities-gf-demo.json
+Quick attempt at representing [https://github.com/PerseusDL/cite_collections/blob/master/src/capabilities/capabilities-gf-demo.xml](https://github.com/PerseusDL/cite_collections/blob/master/src/capabilities/capabilities-gf-demo.xml) as JSON

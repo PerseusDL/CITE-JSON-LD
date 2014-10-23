@@ -1,0 +1,35 @@
+"service": "http://chs.harvard.edu/xmlns/cite",
+"collections": [
+	{
+		"canonical_id": "urn:cite:perseus:dgca",
+		"name": "dgca",
+		"description": "Alignment beads in A Digital Corpus for Greco-Arabic",
+		"class": "0348uposhglkj -- // Not sure what this means",
+		"namespace": {
+			"abbr": "perseus",
+			"full_value": "http://data.perseus.org/ns/collections"
+		},
+		"properties": {
+			"urn": { 
+				"label": "Annotation URN",
+				"type": "citeurn"
+			},
+			"l1": {
+				"label": "Language 1",
+				"type": "string"
+			},
+			"l2": {
+				"label": "Language 2",
+				"type": "string"
+			},
+			"l2cite": {
+				"label": "Cite From Language 2 Text",
+				"type": "ctsurn"
+			},
+			"comment": {
+				"label": "Comment",
+				"type": "markdown"
+			}
+		}
+	}
+]
