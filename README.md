@@ -14,9 +14,10 @@ JSON-LD templates that implement the CITE Collection protocol
 
 Useful links:
 
+* [Perseus CITE Collection Capabilities Files](https://github.com/PerseusDL/cite_collections/tree/master/src/capabilities)
+
 * [Homer Multitext Project: An overview CITE Collection Objects](http://www.homermultitext.org/hmt-doc/cite/)
 
 * [The Homer Multitext and RDF-Based Integration](http://dlib.nyu.edu/awdl/isaw/isaw-papers/7/blackwell-smith/)
 
 * [CITE Collections, Annotations, Triples and Named Graphs](http://folio.furman.edu/projects/cite/four_urls.html)
-
