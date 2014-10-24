@@ -1,5 +1,7 @@
+require_relative 'generator'
+gen = Generator.new
 @data = {
-  :title => "title",
+  :title => gen.rand_string(20),
   :description => "description",
   :urn => "urn",
   :name => "name",
