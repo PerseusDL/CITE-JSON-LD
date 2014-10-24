@@ -12,6 +12,10 @@ JSON-LD templates that implement the CITE Collection protocol
 		* stores example CITE Collection data represented in JSON-LD or regular JSON.
 	* **/samples/other**
 		* stores example CITE Collection data represented in other flat-file formats.
+* **/scripts**
+	* handy scripts!
+* **/generators**
+	* test data generators
 
 ## Useful links
 
@@ -31,11 +35,11 @@ Archived zip files with plenty of XML examples.
 
 * [CITE Collections, Annotations, Triples and Named Graphs](http://folio.furman.edu/projects/cite/four_urls.html)
 
-## Template standards
+## templates
 Use ERB notation in templates
 
 	{
-		"urn": <%= urn %>,
+		"urn": <%= urn %>
 	}
 
 Its variable delimiters are not typically found in JSON,
@@ -46,6 +50,11 @@ which will make any template conversion scripts easier to write.
 is easier to convert than the inverse
 
 	{{ val }} => <%= val %>
+
+## generators
+To use the test data generators install the [Faker](https://github.com/stympy/faker) gem
+
+	gem install faker
 
 ## scripts
 Add scripts directory to your path.
