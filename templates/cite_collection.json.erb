@@ -1,16 +1,18 @@
 {
 	"@context": {
 		"cite": "http://www.homermultitext.org/cite/rdf/",
-		"dc": "http://purl.org/dc/terms/"
-	}
-	"dc:title": <%= data[:title] %>,
-	"dc:description": <%= data[:description] %>,
-	"cite:canonicalId": <%= data[:urn] %>,
-	"name": <%= data[:name] %>,
-	"class": <%= data[:class] %>,
+		"dc": "http://purl.org/dc/terms/",
+		"urn": "http://github.com/caesarfeta/JackSON/blob/master/docs/SCHEMA.md#urn"
+	},
+	"urn": "<%= data[:urn] %>",
+	"dc:title": "<%= data[:title] %>",
+	"dc:description": "<%= data[:description] %>",
+	"cite:canonicalId": "<%= data[:urn] %>",
+	"name": "<%= data[:name] %>",
+	"class": "<%= data[:class] %>",
 	"namespace": {
-		"abbr": <%= data[:namespace][:abbr] %>,
-		"full_value": <%= data[:namespace][:full_value] %>
+		"abbr": "<%= data[:namespace][:abbr] %>",
+		"full_value": "<%= data[:namespace][:full_value] %>"
 	},
 	"properties": <%= data[:properties] %>
 }

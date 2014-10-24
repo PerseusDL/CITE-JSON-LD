@@ -1,13 +1,12 @@
-require_relative 'generator'
-gen = Generator.new
+require 'faker'
 @data = {
-  :title => gen.rand_string(20),
-  :description => "description",
-  :urn => "urn:cite:perseus:#{gen.rand_string(5)}",
-  :name => "name",
-  :class => "class",
+  :title => Faker::Company.name,
+  :description => Faker::Hacker.say_something_smart,
+  :urn => "urn:cite:perseus:#{Faker::Internet.user_name}",
+  :name => Faker::Name.title,
+  :class => Faker::Number.number(100),
   :namespace => {
-    :abbr => "abbr",
+    :abbr => Faker::Internet.domain_word ,
     :full_value => "full_value"
   },
   :properties => [ "property1", "property2" ]
