@@ -3,14 +3,14 @@
 		"cite": "http://www.homermultitext.org/cite/rdf/",
 		"dc": "http://purl.org/dc/terms/"
 	}
-	"dc:title": <%= collection.title %>,
-	"dc:description": <%= collection.description %>,
-	"cite:canonicalId": <%= collection.urn %>,
-	"name": <%= collection.name %>,
-	"class": <%= collection.class %>,
+	"dc:title": <%= data[:title] %>,
+	"dc:description": <%= data[:description] %>,
+	"cite:canonicalId": <%= data[:urn] %>,
+	"name": <%= data[:name] %>,
+	"class": <%= data[:class] %>,
 	"namespace": {
-		"abbr": <%= collection.namespace.abbr %>,
-		"full_value": <%= collection.namespace.full_value %>
+		"abbr": <%= data[:namespace][:abbr] %>,
+		"full_value": <%= data[:namespace][:full_value] %>
 	},
-	"properties": [ <%= collection.properties.concat(',') %> ]
+	"properties": <%= data[:properties] %>
 }
