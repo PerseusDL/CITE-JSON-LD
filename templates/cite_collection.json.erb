@@ -1,0 +1,16 @@
+{
+	"@context": {
+		"cite": "http://www.homermultitext.org/cite/rdf/",
+		"dc": "http://purl.org/dc/terms/"
+	}
+	"dc:title": <%= collection.title %>,
+	"dc:description": <%= collection.description %>,
+	"cite:canonicalId": <%= collection.urn %>,
+	"name": <%= collection.name %>,
+	"class": <%= collection.class %>,
+	"namespace": {
+		"abbr": <%= collection.namespace.abbr %>,
+		"full_value": <%= collection.namespace.full_value %>
+	},
+	"properties": [ <%= collection.properties.concat(',') %> ]
+}

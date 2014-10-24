@@ -1,0 +1,306 @@
+{
+  "head": {
+    "vars": [ "v" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cts/rdf/abbreviatedBy" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cts/rdf/xmlns" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cts/rdf/belongsTo" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://purl.org/dc/terms/title" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/rdf/commentedOnBy" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cts/rdf/translationLang" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cts/rdf/possesses" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cts/rdf/lang" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cts/rdf/hasSequence" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cts/rdf/hasTextContent" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cts/rdf/citationDepth" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/rdf/xmlOpen" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/rdf/xpTemplate" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cts/rdf/containedBy" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cts/rdf/next" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/appearsOn" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cts/rdf/contains" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cts/rdf/prev" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/illustratedBy" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/rdf/commentsOn" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/abbreviatedBy" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/canonicalId" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/collProperty" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/possesses" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/rdf/path" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/rdf/imageCaptionProperty" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/rdf/imageRightsProperty" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/propLabel" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/propType" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/orderedBy" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/rdf/comprisedBy" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/vaimg_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/vaimg_Rights" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/belongsTo" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/ordered" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/hasExtendedRef" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/rdf/isDefaultImage" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/illustrates" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/vbimg_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/vbimg_Rights" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/e3img_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/e3img_Rights" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/e3bifolio_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/e3bifolio_Rights" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/u4img_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/u4img_Rights" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/vgf64img_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/vgf64img_Rights" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/bmpap114_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/bmpap114_Rights" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/blpd_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/blpd_Rights" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/codbod85_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/codbod85_Rights" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/compimg_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/compimg_Rights" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/codices_description" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/codices_pageModel" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/codices_century" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/rdf/expandsTo" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/msA_Sequence" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/msA_RV" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/msA_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://purl.org/ontology/olo/core#item" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://purl.org/ontology/olo/core#next" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/rdf/hasDefaultImage" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://purl.org/ontology/olo/core#previous" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/rdf/editStatus" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/hasOnIt" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/e4_Sequence" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/e4_RV" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/e4_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/e3_Sequence" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/e3_RV" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/e3_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/u4_Sequence" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/u4_RV" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/u4_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/msB_Sequence" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/msB_RV" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/msB_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/vagraphics_Caption" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/vagraphics_Folio" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/vagraphics_VisualEvidence" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/isExtendedRef" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/critsigns_EnglishName" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/critsigns_GreekName" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/critsigns_UnicodeHex" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/critsigns_UnicodeNotes" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/catships_Label" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/catships_AttachedTo" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/catships_VisualEvidence" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/edstatus_Meaning" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/citedata/edstatus_Tier" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/rdf/statusOf" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/hmt/rdf/reuses" }
+      } ,
+      {
+        "v": { "type": "uri" , "value": "http://www.homermultitext.org/cite/rdf/isReusedBy" }
+      }
+    ]
+  }
+}
