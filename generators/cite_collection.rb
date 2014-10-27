@@ -6,7 +6,7 @@ require 'faker'
   :name => Faker::Name.title,
   :class => Faker::Number.number(100),
   :namespace => {
-    :abbr => Faker::Internet.domain_word ,
+    :abbr => Faker::Internet.domain_word,
     :full_value => "full_value"
   },
   :properties => [ "property1", "property2" ]

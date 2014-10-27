@@ -3,8 +3,16 @@
 		"cite": "http://www.homermultitext.org/cite/rdf/",
 		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 		"urn": "http://github.com/caesarfeta/JackSON/blob/master/docs/SCHEMA.md#urn"
+		"time": {
+			"@id": "http://www.w3.org/TR/xmlschema11-2/#dateTime"
+			"@type": "xsd:dateTime"
+		}
 	},
 	"urn": "urn:cite:<%= data[:namespace] %>:<% data[:collection] %>.<%= data[:img] %>.<%= data[:x] %>,<%= data[:y] %>,<%= data[:width] %>,<%= data[:height] %>",
 	"rdf:label": "<%= data[:label] %>",
-	"rdf:description": "<%= data[:description] %>"
+	"rdf:description": "<%= data[:description] %>",
+	"app": <%= data[:app] %>,
+	"lang": <%= data[:lang] %>,
+	"author": <%= data[:author] %>,
+	"time": <%= data[:time] %>
 }
