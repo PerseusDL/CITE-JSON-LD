@@ -75,3 +75,7 @@ Use like so...
 example...
 
 	rdf_isolate ~/Downloads/hmt.ttl cite
+
+## Testing
+I've been using JackSON to test JSON-LD templates.
+[Here's my workflow documented](https://github.com/caesarfeta/JackSON/blob/master/docs/TEMPLATES.md).
