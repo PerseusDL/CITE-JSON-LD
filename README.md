@@ -47,12 +47,12 @@ which will make any template conversion scripts easier to write.
 
 	<%= val %> => {{ val }}
 
-is easier to convert than the inverse
+is easier to convert than, say...
 
 	{{ val }} => <%= val %>
 
 ## generators
-To use the test data generators install the [Faker](https://github.com/stympy/faker) gem
+To use the fake data generators install [Faker](https://github.com/stympy/faker)
 
 	gem install faker
 
@@ -65,7 +65,7 @@ Add scripts directory to your path.
 This script will convert ERB templates to other formats... after it is written...
 
 ### scripts/rdf_isolate.sh
-Quick and dirty script for isolating unique predicate ontology definitions used in a .ttl document.
+Isolate unique predicates used in a .ttl document.
 I can't guarantee completeness.
 
 Use like so...
@@ -78,4 +78,4 @@ example...
 
 ## Testing
 I've been using JackSON to test JSON-LD templates.
-[Here's my workflow documented](https://github.com/caesarfeta/JackSON/blob/master/docs/TEMPLATES.md).
+[My workflow](https://github.com/caesarfeta/JackSON/blob/master/docs/TEMPLATES.md).
