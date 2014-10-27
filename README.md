@@ -25,6 +25,8 @@ XML examples.
 
 * [Index of /hmt/archival-publications](http://beta.hpcc.uh.edu/hmt/archival-publications/)
 
+* [Perseus Myth Commentary Collection Item Example](http://data.perseus.org/collections/urn:cite:perseus:mythcomm.117.1/oac) (view the source to see the raw RDF/XML) - this is an example of a CITE collection item which contains an OA data field
+
 Archived zip files with plenty of XML examples.
 
 * [Homer Multitext Project: An overview CITE Collection Objects](http://www.homermultitext.org/hmt-doc/cite/)
