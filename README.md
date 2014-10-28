@@ -17,7 +17,7 @@ JSON-LD templates that implement the CITE Collection protocol
 * **/generators**
 	* test data generators
 
-## Useful links
+## Reference
 
 * [Perseus CITE Collection Capabilities Files](https://github.com/PerseusDL/cite_collections/tree/master/src/capabilities) XML examples.
 
@@ -33,7 +33,9 @@ JSON-LD templates that implement the CITE Collection protocol
 
 * [Four URLs, Limitless Apps: separation of concerns in the Homer Multitext architecture](http://folio.furman.edu/projects/cite/four_urls.html)
 
-* [CITE Collections, Annotations, Triples and Named Graphs](https://docs.google.com/document/d/1765E-StEK-Fv0yjk05pprMVdaVW8F-oc8dl2T0yhj20/edit?usp=sharing) Reference implementations.
+* [CITE Collections, Annotations, Triples and Named Graphs](https://docs.google.com/document/d/1765E-StEK-Fv0yjk05pprMVdaVW8F-oc8dl2T0yhj20/edit?usp=sharing) 
+
+## Sample implementations
 
  * [CITE Collection Service - Google Fusion](https://bitbucket.org/neelsmith/citefusioncoll) Groovy Servlet based implementation of the CITE Collection Service API which uses Google Fusion Tables as a back-end data store.
 
