@@ -43,7 +43,7 @@ JSON-LD templates that implement the CITE Collection protocol
 
  * [CITE Collection Manager Proxy Service ](https://bitbucket.org/ryanfb/cite-collection-manager) Proxy service for managing access to the Cite Collection Editor so that individual users don't need to be granted access to the Fusion Tables. Note that this is forked and updated for latest Google API code and to fix an auth timeout problem at
  
-  * [CITE Collection Manager](https://github.com/balmas/cite-collection-manager)
+ * [CITE Collection Manager](https://github.com/balmas/cite-collection-manager)
 
 ## templates
  
