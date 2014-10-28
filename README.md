@@ -19,15 +19,11 @@ JSON-LD templates that implement the CITE Collection protocol
 
 ## Useful links
 
-* [Perseus CITE Collection Capabilities Files](https://github.com/PerseusDL/cite_collections/tree/master/src/capabilities)
+* [Perseus CITE Collection Capabilities Files](https://github.com/PerseusDL/cite_collections/tree/master/src/capabilities) XML examples.
 
-XML examples.
-
-* [Index of /hmt/archival-publications](http://beta.hpcc.uh.edu/hmt/archival-publications/)
+* [Index of /hmt/archival-publications](http://beta.hpcc.uh.edu/hmt/archival-publications/) Archived zip files with plenty of XML examples.
 
 * [Perseus Myth Commentary Collection Item Example](http://data.perseus.org/collections/urn:cite:perseus:mythcomm.117.1/oac) (view the source to see the raw RDF/XML) - this is an example of a CITE collection item which contains an OA data field
-
-Archived zip files with plenty of XML examples.
 
 * [Homer Multitext Project: An overview CITE Collection Objects](http://www.homermultitext.org/hmt-doc/cite/)
 
@@ -37,19 +33,15 @@ Archived zip files with plenty of XML examples.
 
 * [Four URLs, Limitless Apps: separation of concerns in the Homer Multitext architecture](http://folio.furman.edu/projects/cite/four_urls.html)
 
-* [CITE Collections, Annotations, Triples and Named Graphs](https://docs.google.com/document/d/1765E-StEK-Fv0yjk05pprMVdaVW8F-oc8dl2T0yhj20/edit?usp=sharing)
+* [CITE Collections, Annotations, Triples and Named Graphs](https://docs.google.com/document/d/1765E-StEK-Fv0yjk05pprMVdaVW8F-oc8dl2T0yhj20/edit?usp=sharing) Reference implementations.
 
-Reference implementations.
+ * [CITE Collection Service - Google Fusion](https://bitbucket.org/neelsmith/citefusioncoll) Groovy Servlet based implementation of the CITE Collection Service API which uses Google Fusion Tables as a back-end data store.
 
- * [https://bitbucket.org/neelsmith/citefusioncoll](https://bitbucket.org/neelsmith/citefusioncoll) Groovy Servlet based implementation of the CITE Collection Service API which uses Google Fusion Tables as a back-end data store.
+ * [CITE Collection Editor](https://bitbucket.org/ryanfb/cite-collection-editor) Client-Side lightweight editor for CITE Collections stored in Google Fusion tables
 
- * [https://bitbucket.org/ryanfb/cite-collection-editor](https://bitbucket.org/ryanfb/cite-collection-editor) Client-Side lightweight editor for CITE Collections stored in Google Fusion tables
-
- * [https://bitbucket.org/ryanfb/cite-collection-manager](https://bitbucket.org/ryanfb/cite-collection-manager) 
+ * [CITE Collection Manager Proxy Service ](https://bitbucket.org/ryanfb/cite-collection-manager) Proxy service for managing access to the Cite Collection Editor so that individual users don't need to be granted access to the Fusion Tables. Note that this is forked and updated for latest Google API code and to fix an auth timeout problem at
  
- Proxy service for managing access to the Cite Collection Editor so that individual users don't need to be granted access to the Fusion Tables. Note that this is forked and updated for latest Google API code and to fix an auth timeout problem at
- 
-  * [https://github.com/balmas/cite-collection-manager](https://github.com/balmas/cite-collection-manager)
+  * [CITE Collection Manager](https://github.com/balmas/cite-collection-manager)
 
 ## templates
  
