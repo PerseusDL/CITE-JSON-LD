@@ -36,7 +36,7 @@ Archived zip files with plenty of XML examples.
 * [HMT RDF vocabulary](http://www.homermultitext.org/hmt-doc/standards/rdfvocabulary.html)
 
 * [Four URLs, Limitless Apps: separation of concerns in the Homer Multitext architecture](http://folio.furman.edu/projects/cite/four_urls.html)
-*
+
 * [CITE Collections, Annotations, Triples and Named Graphs](https://docs.google.com/document/d/1765E-StEK-Fv0yjk05pprMVdaVW8F-oc8dl2T0yhj20/edit?usp=sharing)
 
 Reference implementations.
@@ -45,7 +45,11 @@ Reference implementations.
 
  * [https://bitbucket.org/ryanfb/cite-collection-editor](https://bitbucket.org/ryanfb/cite-collection-editor) Client-Side lightweight editor for CITE Collections stored in Google Fusion tables
 
- * [https://bitbucket.org/ryanfb/cite-collection-manager](https://bitbucket.org/ryanfb/cite-collection-manager) Proxy service for managing access to the Cite Collection Editor so that individual users don't need to be granted access to the Fusion Tables. Note that this is forked and updated for latest Google API code and to fix an auth timeout problem at [https://github.com/balmas/cite-collection-manager](https://github.com/balmas/cite-collection-manager)
+ * [https://bitbucket.org/ryanfb/cite-collection-manager](https://bitbucket.org/ryanfb/cite-collection-manager) 
+ 
+ Proxy service for managing access to the Cite Collection Editor so that individual users don't need to be granted access to the Fusion Tables. Note that this is forked and updated for latest Google API code and to fix an auth timeout problem at
+ 
+  * [https://github.com/balmas/cite-collection-manager](https://github.com/balmas/cite-collection-manager)
 
 ## templates
  

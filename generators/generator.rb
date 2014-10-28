@@ -1,4 +1,3 @@
-
 class Generator
   # Random lower-case string n letters long
   def rstring( n )
@@ -11,7 +10,7 @@ class Generator
   end
   
   # Random float between a and b
-  def rfloat( a, b, n=4 )
+  def rfloat( a=0, b=1, n=4 )
     ndig( rand()*(b-a)+a, n )
   end
   
