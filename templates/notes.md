@@ -1,11 +1,11 @@
-### img_roi.json.erb
+### img/img_roi.json.erb
 URN for a collection image (img) region of interest (roi).
 
-### hmt_rdf.json.erb
+### test/hmt_rdf.json.erb
 JSON-LD representation of all RDF identifiers found in [http://beta.hpcc.uh.edu/hmt/archival-publications/hmt-rdf-2014.1.zip](http://beta.hpcc.uh.edu/hmt/archival-publications/hmt-rdf-2014.1.zip) > *.ttl
 
-### cite_property.json.erb
+### test/cite_property.json.erb
 A CITE Property
 
-### cite_collection.json.erb
+### test/cite_collection.json.erb
 CITE collection wrapper
