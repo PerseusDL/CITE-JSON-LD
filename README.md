@@ -54,6 +54,12 @@ JSON-LD templates that implement the CITE Collection protocol
 
 * [CITE Collection Manager](https://github.com/balmas/cite-collection-manager)
 
+### Why it's so hard to use CTS URN as nodes
+
+* [https://github.com/json-ld/json-ld.org/issues/46](https://github.com/json-ld/json-ld.org/issues/46)
+
+A fix is in the works in JackRDF.
+
 ## templates
  
 Use ERB notation in templates

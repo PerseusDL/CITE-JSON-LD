@@ -1,14 +1,37 @@
 {
-	urn: "urn:cite:perseus:author.1.1",
-	authority_name: "Anacreontea",
-	canonical_id: "",
-	mads_file: "PrimaryAuthors/A/Anacreontea/n83-015406.mads.xml",
-	alt_ids: "",
-	related_works: "tlg4150.tlg001",
-	urn_status: "published",
-	redirect_to: "",
-	created_by: "feed_aggregator",
-	edited_by: "",
-	created_at: null,
-	updated_at: null
+	"@context": {
+		"urn": "http://www.homermultitext.org/hmt-doc/cite/texts/ctsoverview.html#urn:",
+		"service": "http://perseus.org/service/",
+		"status": "http://perseus.org/status/",
+		"cust": "http://github.com/caesarfeta/JackSON/blob/master/docs/SCHEMA.md#",
+		"created_at": {
+			"@id": "cust:createdAt",
+			"@type": "xsd:dateTime"
+		},
+		"updated_at": {
+			"@id": "cust:updatedAt",
+			"@type": "xsd:dateTime"
+		},
+		"created_by": {
+			"@id": "cust:createdBy"
+		},
+		"urn_status": {
+			"@id": "cust:urnStatus"
+		},
+		"canonical_id": {
+			"@id": "cust:canonicalId"
+		}
+	},
+	"@id": "urn:cite:perseus:author.1.1",
+	"authority_name": "Anacreontea",
+	"canonical_id": { "@id": "urn:cite:perseus:author.1.1" },
+	"mads_file": "PrimaryAuthors/A/Anacreontea/n83-015406.mads.xml",
+	"alt_ids": "",
+	"related_works": "tlg4150.tlg001",
+	"urn_status": { "@id": "status:published" },
+	"redirect_to": "",
+	"edited_by": "",
+ 	"created_by": { "@id": "service:feed_aggregator" },
+	"created_at": "<%= data[:created_at] %>",
+	"updated_at": "<%= data[:updated_at] %>"
 }
