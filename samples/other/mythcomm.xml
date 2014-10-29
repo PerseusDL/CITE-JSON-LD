@@ -1,24 +1,52 @@
 
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="http://data.perseus.org/xslt/oactohtml.xsl"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:oac="http://www.openannotation.org/ns/" xmlns:cnt="http://www.w3.org/2008/content#">
-  <Annotation xmlns="http://www.w3.org/ns/oa#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="http://data.perseus.org/collections/urn:cite:perseus:mythcomm.117.1">
-    <hasTarget xmlns="http://www.w3.org/ns/oa#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://data.perseus.org/citations/urn:cts:greekLit:tlg0019.tlg006:685-707"/>
-    <hasTarget xmlns="http://www.w3.org/ns/oa#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://data.perseus.org/citations/urn:cts:greekLit:tlg0019.tlg006.perseus-eng1:685-707"/>
-    <hasBody xmlns="http://www.w3.org/ns/oa#">
-      <ContentAsText xmlns="http://www.w3.org/2008/content#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="http://data.perseus.org/collections/urn:cite:perseus:mythcomm.117.1/commentary">
-        <type xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://purl.org/dc/dcmitype/Text"/>
-        <format xmlns="http://purl.org/dc/elements/1.1/">text/plain</format>
-        <language xmlns="http://purl.org/dc/elements/1.1/">eng</language>
-        <chars xmlns="http://www.w3.org/2008/content#">Aristophanes in the comedy Birds parodies the Greek conception of the human inability to comprehend their fate, and the word of the gods present within Sophocles&apos; Antigone. Able to travel between the divine and earthly realm the conception of birds as messengers of the gods is present throughout Sophocles&apos; tragedy. Upon the outset of the play, &quot;birds of prey swoop and feast&quot; upon the corpse of Polynices indicating the god&apos;s displeasure with Creon&apos;s decision to leave Oedipus&apos; son unburied. Teiresias warns Creon of the &quot;strange&quot; and &quot;unnatural&quot; sight of the creatures which had gorged upon Polynices&apos; body, that serve as a indication of the horrid future which is to come. The birds &quot;glutted with the blood of men&quot; and &quot;screaming in rage&quot; began &quot;tearing at each other&quot; with &quot;murderous claws&quot;. The perverse behavior of the birds serves as sign that the actions taken within the kingdom are equally ill-fated. Creon defies the will of the gods further acknowledging that &quot;though Zeus&apos; own eagles eat the corpse&quot; and &quot;bear the carrion to their masters throne&quot; man&apos;s law holds authority over the divination passed down from by the birds by god&apos;s law. The king is blind to the disastrous fate that will befall him while the birds which forewarn his destiny are depicted as more capable of comprehending the judgment of Mt . Olympus than pitiable and ignorant men. Aristophanes&apos; mocks the conception that birds are more gifted in comprehending man&apos;s fate than man himself as divinely ordained creatures. Humans in contrast to the winged &quot;immortal beings&quot; are &quot;weak&quot; and &quot;chained to the earth&quot;, powerless to seek divination directly from the heavens. The leader of the chorus speaking down to the human race boasts that they, the birds are endlessly &quot;occupied by eternal thoughts&quot; yet claiming the willingness to &quot;teach&quot; the human race &quot;about all celestial matters&quot;. Referencing their genealogy, the chorus claims the species holds a connection to the beginnings of existence itself. Originating before the human race with the creation of all things, &quot;Eros with his glittering golden wings... mated in deep Tartarus with chaos&quot;. Birds as &quot;the first to see the light&quot; came into being before the gods themselves, holding an elite status within the origins of all things. The boastful and divine nature of birds asserted by the chorus serves to mock the aggrandized and widely accepted conception of man&apos;s inability to comprehend his fate within Greek society.</chars>
-      </ContentAsText>
-    </hasBody>
-    <annotatedBy xmlns="http://www.w3.org/ns/oa#">
-      <Person xmlns="http://xmlns.com/foaf/0.1/" 
-        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:about="http://data.perseus.org/sosol/users/William%20Scott%20Spear">
-        <foaf:name>William Scott Spear</foaf:name>
-      </Person>
-    </annotatedBy>
-    <motivatedBy xmlns="http://www.w3.org/ns/oa#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:resource="http://www.w3.org/ns/oa#commenting"/>
-    <annotatedAt xmlns="http://www.w3.org/ns/oa#">2013-12-01T18:39:55+00:00</annotatedAt>
-  </Annotation>
+<rdf:RDF 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:oac="http://www.openannotation.org/ns/"
+	xmlns:cnt="http://www.w3.org/2008/content#">
+  	<Annotation 
+		xmlns="http://www.w3.org/ns/oa#"
+		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 		rdf:about="http://data.perseus.org/collections/urn:cite:perseus:mythcomm.117.1">
+    	<hasTarget 
+			xmlns="http://www.w3.org/ns/oa#"
+			xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 		
+			rdf:resource="http://data.perseus.org/citations/urn:cts:greekLit:tlg0019.tlg006:685-707"/>
+    	<hasTarget 
+			xmlns="http://www.w3.org/ns/oa#"
+			xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 		
+			rdf:resource="http://data.perseus.org/citations/urn:cts:greekLit:tlg0019.tlg006.perseus-eng1:685-707"/>
+    	<hasBody 
+			xmlns="http://www.w3.org/ns/oa#">
+			<ContentAsText 
+				xmlns="http://www.w3.org/2008/content#" 			
+				xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+				rdf:about="http://data.perseus.org/collections/urn:cite:perseus:mythcomm.117.1/commentary">
+    	    	<type 
+					xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+					xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+					rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+					<format xmlns="http://purl.org/dc/elements/1.1/">text/plain</format>
+					<language xmlns="http://purl.org/dc/elements/1.1/">eng</language>
+					<chars xmlns="http://www.w3.org/2008/content#">Aristophanes in the comedy Birds parodies the Greek conception of the human inability to comprehend their fate, and the word of the gods present within Sophocles&apos; Antigone...</chars>
+			</ContentAsText>
+		</hasBody>
+    	<annotatedBy
+			xmlns="http://www.w3.org/ns/oa#">
+			<Person 
+				xmlns="http://xmlns.com/foaf/0.1/" 
+				xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+				rdf:about="http://data.perseus.org/sosol/users/William%20Scott%20Spear">
+    	    	<foaf:name>William Scott Spear</foaf:name>
+			</Person>
+    	</annotatedBy>
+    	<motivatedBy 
+			xmlns="http://www.w3.org/ns/oa#" 
+			xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 		
+			rdf:resource="http://www.w3.org/ns/oa#commenting"/>
+    	<annotatedAt 
+			xmlns="http://www.w3.org/ns/oa#">2013-12-01T18:39:55+00:00</annotatedAt>
+	</Annotation>
 </rdf:RDF>

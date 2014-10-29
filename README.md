@@ -18,12 +18,21 @@ JSON-LD templates that implement the CITE Collection protocol
 	* test data generators
 
 ## Reference
+### JSON-LD
 
+* [JSON-LD primer](http://json-ld.org/primer/latest/)
+	* read my notes **PRIMER.md**
+
+* [Identifiers in JSON-LD and RDF](http://manu.sporny.org/2013/rdf-identifiers/)
+
+### CITE
+#### Perseus
 * [Perseus CITE Collection Capabilities Files](https://github.com/PerseusDL/cite_collections/tree/master/src/capabilities) XML examples.
 
-* [Index of /hmt/archival-publications](http://beta.hpcc.uh.edu/hmt/archival-publications/) Archived zip files with plenty of XML examples.
-
 * [Perseus Myth Commentary Collection Item Example](http://data.perseus.org/collections/urn:cite:perseus:mythcomm.117.1/oac) (view the source to see the raw RDF/XML) - this is an example of a CITE collection item which contains an OA data field
+
+#### Homer Multitext
+* [Index of /hmt/archival-publications](http://beta.hpcc.uh.edu/hmt/archival-publications/) Archived zip files with plenty of XML examples.
 
 * [Homer Multitext Project: An overview CITE Collection Objects](http://www.homermultitext.org/hmt-doc/cite/)
 
@@ -35,15 +44,15 @@ JSON-LD templates that implement the CITE Collection protocol
 
 * [CITE Collections, Annotations, Triples and Named Graphs](https://docs.google.com/document/d/1765E-StEK-Fv0yjk05pprMVdaVW8F-oc8dl2T0yhj20/edit?usp=sharing) 
 
-## Sample implementations
+### Sample implementations
 
- * [CITE Collection Service - Google Fusion](https://bitbucket.org/neelsmith/citefusioncoll) Groovy Servlet based implementation of the CITE Collection Service API which uses Google Fusion Tables as a back-end data store.
+* [CITE Collection Service - Google Fusion](https://bitbucket.org/neelsmith/citefusioncoll) Groovy Servlet based implementation of the CITE Collection Service API which uses Google Fusion Tables as a back-end data store.
 
- * [CITE Collection Editor](https://bitbucket.org/ryanfb/cite-collection-editor) Client-Side lightweight editor for CITE Collections stored in Google Fusion tables
+* [CITE Collection Editor](https://bitbucket.org/ryanfb/cite-collection-editor) Client-Side lightweight editor for CITE Collections stored in Google Fusion tables
 
- * [CITE Collection Manager Proxy Service ](https://bitbucket.org/ryanfb/cite-collection-manager) Proxy service for managing access to the Cite Collection Editor so that individual users don't need to be granted access to the Fusion Tables. Note that this is forked and updated for latest Google API code and to fix an auth timeout problem at
- 
- * [CITE Collection Manager](https://github.com/balmas/cite-collection-manager)
+* [CITE Collection Manager Proxy Service ](https://bitbucket.org/ryanfb/cite-collection-manager) Proxy service for managing access to the Cite Collection Editor so that individual users don't need to be granted access to the Fusion Tables. Note that this is forked and updated for latest Google API code and to fix an auth timeout problem at
+
+* [CITE Collection Manager](https://github.com/balmas/cite-collection-manager)
 
 ## templates
  
@@ -86,6 +95,12 @@ Use like so...
 example...
 
 	rdf_isolate ~/Downloads/hmt.ttl cite
+
+### scripts/url_isolate.rb
+Isolate unique URLs.
+Use...
+
+	ruby url_isolate.rb /path/to/text/file
 
 ## Testing
 I've been using JackSON to test JSON-LD templates.
