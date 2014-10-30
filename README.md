@@ -108,6 +108,19 @@ Use...
 
 	ruby url_isolate.rb /path/to/text/file
 
-## Testing
-I've been using JackSON to test JSON-LD templates.
+### scripts/to_rdf.rb
+Convert a JSON-LD file to Turtle RDF
+
+	ruby to_rdf.rb /path/to/json_ld/file
+
+If you receive this error...
+
+	 `require': cannot load such file -- rdf/turtle (LoadError)
+
+Run...
+
+	gem install rdf-turtle
+
+## Further testing
+I've been using JackSON to test collections of JSON-LD templates.
 [My workflow](https://github.com/caesarfeta/JackSON/blob/master/docs/TEMPLATES.md).

@@ -1,9 +1,9 @@
 {
 	"@context": {
-		"urn": "http://www.homermultitext.org/hmt-doc/cite/texts/ctsoverview.html#urn:",
+		"urn": "http://www.homermultitext.org/cts/rdf#urn:",
+		"cust": "http://github.com/caesarfeta/JackSON/blob/master/docs/SCHEMA.md#",
 		"service": "http://perseus.org/service/",
 		"status": "http://perseus.org/status/",
-		"cust": "http://github.com/caesarfeta/JackSON/blob/master/docs/SCHEMA.md#",
 		"created_at": {
 			"@id": "cust:createdAt",
 			"@type": "xsd:dateTime"
@@ -12,15 +12,9 @@
 			"@id": "cust:updatedAt",
 			"@type": "xsd:dateTime"
 		},
-		"created_by": {
-			"@id": "cust:createdBy"
-		},
-		"urn_status": {
-			"@id": "cust:urnStatus"
-		},
-		"canonical_id": {
-			"@id": "cust:canonicalId"
-		}
+		"created_by": { "@id": "cust:createdBy"},
+		"urn_status": { "@id": "cust:urnStatus" },
+		"canonical_id": { "@id": "cust:canonicalId" }
 	},
 	"@id": "urn:cite:perseus:author.1.1",
 	"authority_name": "Anacreontea",
