@@ -2,7 +2,7 @@
 
 Welcome!
 I'll give you a quick run-down of how to write JSON-LD templates, which will provide you with a solid foundation for building a linked-data application.
-Then I'll show you how to build a prototype application.
+Then I'll show you how to build a prototype application with [JackSON](https://github.com/caesarfeta/JackSON).
 
 ## Why use JSON-LD?
 Converting JSON to JSON-LD is worthwhile for one simple reason.
@@ -19,29 +19,21 @@ If you don't know what those mean in the context of linked-data you will be very
 ## The process
 Here's a quick synopsis of what's covered in this tutorial.
 
-1. Data Model
+1. Data Modelling
 	1. Model data in JSON
 	2. Convert JSON into JSON-LD
 		1. Test with static data
 		2. Test with dynamic fake data
-2. API
+	3. Best practices
+2. Building a RESTful API
 	1. General Design
 	2. Write data validators
 	3. Document API with RAML
 
-<!--
-3. User Interface
-	1. Integrate templates
-	2. Interface testing
-4. Launch
-	1. Estimate running costs
-	2. Launch!
-	3. Publish
-	4. Promote
-	5. Gather feedback
--->
-
 Let's go!
+
+
+# Data Modelling
 
 ## Model data in JSON
 First step is to model your data in JSON.
@@ -127,7 +119,7 @@ and
 They're essential to how JSON-LD works, 
 so let me explain them in a bit more detail.
 
-### "@id"
+#### "@id"
 "@id" is always used to define an IRI.
 If IRI is a new acronym for you [http://en.wikipedia.org/wiki/Internationalized_resource_identifier](read this.)
 It won't take long ;) 
@@ -152,7 +144,7 @@ will be expanded into...
 
 JSON-LD doesn't use PREFIX it has something similar though...
 
-### "@context"
+#### "@context"
 
 "@context" is where you define your verbs, prefixes, and object datatypes, 
 and it's how JSON keys are mapped to RDF verbs.
@@ -189,9 +181,9 @@ this key value pair...
 
 will be tranformed to this RDF...
 
-	<http://perseus.org/rdf/createdAt> "2014-05-28 01:05:15 -0400"^^<xsd:dateTime>
+	<http://perseus.org/rdf/createdAt> | "2014-05-28 01:05:15 -0400"^^<xsd:dateTime>
 
-### The many faces of "@id"
+#### The many faces of "@id"
 "@id" does different things depending on its location in the JSON-LD object.
 You've already seen it used in @context to map a JSON key to an RDF verb.
 But it also serves two other purposes...
@@ -214,12 +206,28 @@ Let's look at a concrete example...
 		]
 	}
 
+Here's the same data represented after being converted to RDF triples...
 
-## Testing with static data
+	<http://www.homermultitext.org/cts/rdf#urn:cite:perseus:author.1.1> | <http://perseus.org/rdf/redirectTo> | <http://www.homermultitext.org/cts/rdf#urn:cite:perseus:author.1.2>
+	<http://www.homermultitext.org/cts/rdf#urn:cite:perseus:author.1.1> | <http://perseus.org/rdf/redirectTo> | <http://www.homermultitext.org/cts/rdf#urn:cite:perseus:author.2.4>
 
-## Testing with dynamic fake data
+We'd probably 
 
-## Best practices
+### CITE URNs, Relative IRIs and JSON-LD
+
+
+### Test with static data
+Here's a quick and easy way of testing your JSON-LD.
+
+	cd CITE-JSON-LD/scripts
+	ruby to_rdf.rb /path/to/json-ld/static.json 
+
+### Test with dynamic fake data
+
+#### JackSON
+
+
+### Best practices
 Here's how I like to structure my JSON-LD files.
 I find it makes it easier to check my work,
 and it makes templating easier...
@@ -239,3 +247,6 @@ and it makes templating easier...
 		"@id": "urn",
 		KEYS in same order as MAPPINGS
 	}
+
+# Building a RESTful API
+coming soon!
