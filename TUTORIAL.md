@@ -48,7 +48,7 @@ First step is to model your data in JSON.
 I'm going to assume you've done this before.
 You probably have some JSON files lying around.
 
-Here's my example JSON.
+Here's an example.
 
 	{
 		id: 2,
@@ -82,14 +82,6 @@ Here's an author record converted to JSON-LD
 			"service": "http://perseus.org/service/",
 			"status": "http://perseus.org/status/",
 			"user": "http://perseus.org/user/",
-			"edited_by": { "@id": "rdf:editedBy" },
-			"created_by": { "@id": "rdf:createdBy" },
-			"urn_status": { "@id": "rdf:urnStatus" },
-			"canonical_id": { "@id": "rdf:canonicalId" },
-			"alt_ids": { "@id": "rdf:altIds" },
-			"authority_name": { "@id": "rdf:authorityName" },
-			"mads_file": { "@id": "rdf:madsFile" },
-			"redirect_to": { "@id": "rdf:redirectTo" },
 			"created_at": {
 				"@id": "rdf:createdAt",
 				"@type": "xsd:dateTime"
@@ -97,23 +89,31 @@ Here's an author record converted to JSON-LD
 			"updated_at": {
 				"@id": "rdf:updatedAt",
 				"@type": "xsd:dateTime"
-			}
+			},
+			"edited_by": { "@id": "rdf:editedBy" },
+			"created_by": { "@id": "rdf:createdBy" },
+			"urn_status": { "@id": "rdf:urnStatus" },
+			"canonical_id": { "@id": "rdf:canonicalId" },
+			"alt_ids": { "@id": "rdf:altIds" },
+			"authority_name": { "@id": "rdf:authorityName" },
+			"mads_file": { "@id": "rdf:madsFile" },
+			"redirect_to": { "@id": "rdf:redirectTo" }
 		},
-		"@id": "urn:cite:<%= data[:namespace] %>:<%= data[:collection] %>.1.1",
+		"@id": "urn:cite:perseus:author.1.1",
+		"authority_name": "Anacreontea",
+		"canonical_id": { "@id": "urn:cite:perseus:author.1.1" },
+		"mads_file": "PrimaryAuthors/A/Anacreontea/n83-015406.mads.xml",
+		"alt_ids": [ "tlg1818x01", "tlg2020x02" ],
 		"redirect_to": [
 			{ "@id": "urn:cite:perseus:author.1.2" },
 			{ "@id": "urn:cite:perseus:author.2.4" }
 		],
+		"related_works": [ "tlg4150.tlg001" ],
 		"urn_status": { "@id": "status:published" },
 		"edited_by": { "@id": "user:adamt" },
 	 	"created_by": { "@id": "service:feed_aggregator" },
-		"canonical_id": { "@id": "urn:cite:perseus:author.1.1" },
-		"created_at": "<%= data[:created_at] %>",
-		"updated_at": "<%= data[:updated_at] %>",
-		"related_works": [ "tlg4150.tlg001" ],
-		"alt_ids": [ "tlg1818x01", "tlg2020x02" ],
-		"authority_name": "Anacreontea",
-		"mads_file": "PrimaryAuthors/A/Anacreontea/n83-015406.mads.xml"
+		"created_at": "2014-01-28 11:44:53 -0500",
+		"updated_at": "2013-11-01 21:22:11 -0400"
 	}
 
 You've probably noticed the presence of 
@@ -127,7 +127,7 @@ and
 They're essential to how JSON-LD works, 
 so let me explain them in a bit more detail.
 
-# "@id"
+### "@id"
 "@id" is always used to define an IRI.
 If IRI is a new acronym for you [http://en.wikipedia.org/wiki/Internationalized_resource_identifier](read this.)
 It won't take long ;) 
@@ -150,13 +150,12 @@ will be expanded into...
 
 	<http://perseus.org/rdf/updatedAt>
 
-JSON-LD doesn't use PREFIX.
-It uses...
+JSON-LD doesn't use PREFIX it has something similar though...
 
-## "@context"
+### "@context"
 
 "@context" is where you define your verbs, prefixes, and object datatypes, 
-and it's where JSON keys are mapped to RDF verbs.
+and it's how JSON keys are mapped to RDF verbs.
 
 Here's a prefix.
 
@@ -192,16 +191,32 @@ will be tranformed to this RDF...
 
 	<http://perseus.org/rdf/createdAt> "2014-05-28 01:05:15 -0400"^^<xsd:dateTime>
 
-## The many faces of "@id"
+### The many faces of "@id"
 "@id" does different things depending on its location in the JSON-LD object.
 You've already seen it used in @context to map a JSON key to an RDF verb.
-But it also serves two other purposes.
+But it also serves two other purposes...
 
-"@id" in the object root defines the subject node IRI.
-"@id" in a key-value pair defines an object node IRI.
+1. "@id" in the object root defines the subject node IRI.
+2. "@id" in a key-value pair defines an object node IRI.
+
+Let's look at a concrete example...
+
+	{
+		"@context": {
+			"urn": "http://www.homermultitext.org/cts/rdf#urn:",
+			"rdf": "http://perseus.org/rdf/",
+			"redirect_to": { "@id": "rdf:redirectTo" }
+		},
+		"@id": "urn:cite:perseus:author.1.1",
+		"redirect_to": [
+			{ "@id": "urn:cite:perseus:author.1.2" },
+			{ "@id": "urn:cite:perseus:author.2.4" }
+		]
+	}
 
 
 ## Testing with static data
+
 ## Testing with dynamic fake data
 
 ## Best practices
