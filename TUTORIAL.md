@@ -2,14 +2,22 @@
 
 Welcome!
 I'll give you a quick run-down of how to write JSON-LD templates, which will provide you with a solid foundation for building a linked-data application.
-
 Then I'll show you how to build a prototype application.
 
-## What is a linked-data application any way?
-Why build a linked
+## Why use JSON-LD?
+Converting JSON to JSON-LD is worthwhile for one simple reason.
+
+1. It forces you to give your data universal identifiers, which aids with citation and peer review.
+
+Once your data has unique universal identifiers, you'll be able to use some fantastic tools to publish it.  These same tools are also a great way for everyone to search and analyze your data, yourself included.
+
+## Prerequisites
+I'm assuming you have working knowledge of JSON and RDF, and that you know what JSON-LD basically is, but you don't have much experience using it.
+I throw around the words graph, node, edge, SPARQL, and Turtle.
+If you don't know what those mean in the context of linked-data you will be very confused if you keep reading.
 
 ## The process
-Here's a quick synopsis of the process covered in this tutorial.
+Here's a quick synopsis of what's covered in this tutorial.
 
 1. Data Model
 	1. Model data in JSON
@@ -65,7 +73,7 @@ Its structure is very simple, which makes it a good foundation to teach you how 
 ## Convert JSON into JSON-LD
 I'll show you how to use a small subset of JSON-LD's features to convert JSON into valid JSON-LD.
 
-Here's the author record converted to JSON-LD
+Here's an author record converted to JSON-LD
 
 	{
 		"@context": {
@@ -103,77 +111,104 @@ Here's the author record converted to JSON-LD
 		"created_at": "<%= data[:created_at] %>",
 		"updated_at": "<%= data[:updated_at] %>",
 		"related_works": [ "tlg4150.tlg001" ],
-		"alt_ids": [ 
-			"tlg1818x01", 
-			"tlg2020x02" 
-		],
+		"alt_ids": [ "tlg1818x01", "tlg2020x02" ],
 		"authority_name": "Anacreontea",
 		"mads_file": "PrimaryAuthors/A/Anacreontea/n83-015406.mads.xml"
 	}
 
-Here's what's different.
-I've added two new keys to the root.
+You've probably noticed the presence of 
 
-	{
-		"@id": ""
-		"@context": {}
-	}
+	"@id"
 
-Let me explain how they work in a bit more detail.
-They're basically what turn JSON into JSON-LD
+and
+
+	"@context"
+
+They're essential to how JSON-LD works, 
+so let me explain them in a bit more detail.
+
+# "@id"
+"@id" is always used to define an IRI.
+If IRI is a new acronym for you [http://en.wikipedia.org/wiki/Internationalized_resource_identifier](read this.)
+It won't take long ;) 
+If you've seen RDF in Turtle (.ttl) format...
+
+	<urn:cite:perseus:collection.1> | <http://perseus.org/rdf/updatedAt> | "2013-11-01 21:22:11 -0400"^^<xsd:dateTime>
+
+then you've seen an IRI.
+An IRI is anything between...
+
+	<>
+
+Colons in an "@id" value have special properties in JSON-LD.
+A colon signifies you're using a prefix representation of an absolute IRI and therefore your value needs to be expanded. For example when using SPARQL.
+
+	PREFIX rdf: <http://perseus.org/rdf/>
+	<rdf:updatedAt>
+
+will be expanded into...
+
+	<http://perseus.org/rdf/updatedAt>
+
+JSON-LD doesn't use PREFIX.
+It uses...
 
 ## "@context"
 
-@context is where you define your verbs, prefixes, and object datatypes.
-If that doesn't make any sense read up on RDF.
+"@context" is where you define your verbs, prefixes, and object datatypes, 
+and it's where JSON keys are mapped to RDF verbs.
 
 Here's a prefix.
 
-		"cust": "http://github.com/caesarfeta/JackSON/blob/master/docs/SCHEMA.md#",
+	"@context": {
+		"rdf": "http://perseus.org/rdf/"
+	}
 
-This line defines a verb and the associated object data type.
+This defines an RDF verb `<http://perseus.org/rdf/editedBy>` and maps it to the `"edited_by"` JSON key
 
+	"@context": {
+		"rdf": "http://perseus.org/rdf/",
+		"edited_by": { "@id": "rdf:editedBy" }
+	}
+
+This does the same as above but also specifies the object node's datatype as "xsd:dateTime".
+
+	"@context": {
+		"rdf": "http://perseus.org/rdf/",
 		"created_at": {
-			"@id": "cust:createdAt",
+			"@id": "rdf:createdAt",
 			"@type": "xsd:dateTime"
 		},
+	}
 
 The default datatype is a string literal.
-Use @type to specify a new datatype.
-
-@id specifies a node, in our cases it usually means a CITE URN or an Absolute IRI.
-Colons in an @id value have special properties in JSON-LD.
-A colon signifies you're using a prefix representation of an Absolute IRI.
-So that means a key value pair in the JSON file... 
+"@type" will specify a new datatype, 
+so later on in the JSON-LD document where your actual data values are set,
+this key value pair... 
 
 	"created_at": "2014-05-28 01:05:15 -0400"
 
-will be expanded like this... ( this verb and object )... when converted to RDF
+will be tranformed to this RDF...
 
-	<http://github.com/caesarfeta/JackSON/blob/master/docs/SCHEMA.md#updatedAt> "2014-05-28 01:05:15 -0400"^^<xsd:dateTime>
+	<http://perseus.org/rdf/createdAt> "2014-05-28 01:05:15 -0400"^^<xsd:dateTime>
 
-## CITE URNs & Relative IRIs
+## The many faces of "@id"
+"@id" does different things depending on its location in the JSON-LD object.
+You've already seen it used in @context to map a JSON key to an RDF verb.
+But it also serves two other purposes.
 
-A CITE URN is a relative IRI, which is not the preferred way of defining a node.
-It's a best practice to use global identifiers.
-
-A CITE URN is a Relative IRI:
-
-	<urn:cite:namespace:collection.1>
-
-but Absolute IRIs, like this is preferred by idealists in the RDF working group:
-
-	<http://www.homermultitext.org/cts/rdf#urn:cite:namespace:collection.1>
+"@id" in the object root defines the subject node IRI.
+"@id" in a key-value pair defines an object node IRI.
 
 
-Colons in an @id value have special properties in JSON-LD.
-A colon signifies you're using a short-representation of an IRI.
-This can cause some confusion.
+## Testing with static data
+## Testing with dynamic fake data
 
-JackRDF does some extra things with the RDF created by the JSON-LD converter.
-The changes are very simple and do not change the fundamentals of JSON-LD RDF conversion.
-
-## preferred structure
+## Best practices
+Here's how I like to structure my JSON-LD files.
+I find it makes it easier to check my work,
+and it makes templating easier...
+"@context" objects can be reused across templates, etc.
 
 	{
 		"@context": {
