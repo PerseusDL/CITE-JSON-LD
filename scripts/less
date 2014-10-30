@@ -1,0 +1,12 @@
+
+<http://www.homermultitext.org/cts/rdf#urn:cite:goyette:thompsonkirlin.1.1> <http://perseus.org/rdf/altIds> "tlg1818x01",
+     "tlg2020x02";
+   <http://perseus.org/rdf/authorityName> "Anacreontea";
+   <http://perseus.org/rdf/canonicalId> <http://www.homermultitext.org/cts/rdf#urn:cite:perseus:author.1.1>;
+   <http://perseus.org/rdf/createdAt> "2014-04-30 04:10:38 -0400"^^<xsd:dateTime>;
+   <http://perseus.org/rdf/createdBy> <http://perseus.org/service/feed_aggregator>;
+   <http://perseus.org/rdf/madsFile> "PrimaryAuthors/A/Anacreontea/n83-015406.mads.xml";
+   <http://perseus.org/rdf/redirectTo> <http://www.homermultitext.org/cts/rdf#urn:cite:perseus:author.1.2>,
+     <http://www.homermultitext.org/cts/rdf#urn:cite:perseus:author.2.4>;
+   <http://perseus.org/rdf/updatedAt> "2014-09-11 22:17:14 -0400"^^<xsd:dateTime>;
+   <http://perseus.org/rdf/urnStatus> <http://perseus.org/status/published> .

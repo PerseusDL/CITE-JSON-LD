@@ -2,6 +2,9 @@ CITE-JSON-LD
 ============
 JSON-LD templates that implement the CITE Collection protocol
 
+## Tutorial
+Learn how to build 
+
 ## Directories explained
 
 * **/templates**

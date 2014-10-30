@@ -1,31 +1,43 @@
 {
 	"@context": {
 		"urn": "http://www.homermultitext.org/cts/rdf#urn:",
-		"cust": "http://github.com/caesarfeta/JackSON/blob/master/docs/SCHEMA.md#",
+		"rdf": "http://perseus.org/rdf/",
 		"service": "http://perseus.org/service/",
 		"status": "http://perseus.org/status/",
+		"user": "http://perseus.org/user/",
+		"edited_by": { "@id": "rdf:editedBy" },
+		"created_by": { "@id": "rdf:createdBy" },
+		"urn_status": { "@id": "rdf:urnStatus" },
+		"canonical_id": { "@id": "rdf:canonicalId" },
+		"alt_ids": { "@id": "rdf:altIds" },
+		"authority_name": { "@id": "rdf:authorityName" },
+		"mads_file": { "@id": "rdf:madsFile" },
+		"redirect_to": { "@id": "rdf:redirectTo" },
 		"created_at": {
-			"@id": "cust:createdAt",
+			"@id": "rdf:createdAt",
 			"@type": "xsd:dateTime"
 		},
 		"updated_at": {
-			"@id": "cust:updatedAt",
+			"@id": "rdf:updatedAt",
 			"@type": "xsd:dateTime"
-		},
-		"created_by": { "@id": "cust:createdBy"},
-		"urn_status": { "@id": "cust:urnStatus" },
-		"canonical_id": { "@id": "cust:canonicalId" }
+		}
 	},
-	"@id": "urn:cite:perseus:author.1.1",
-	"authority_name": "Anacreontea",
-	"canonical_id": { "@id": "urn:cite:perseus:author.1.1" },
-	"mads_file": "PrimaryAuthors/A/Anacreontea/n83-015406.mads.xml",
-	"alt_ids": "",
-	"related_works": "tlg4150.tlg001",
+	"@id": "urn:cite:<%= data[:namespace] %>:<%= data[:collection] %>.1.1",
+	"redirect_to": [
+		{ "@id": "urn:cite:perseus:author.1.2" },
+		{ "@id": "urn:cite:perseus:author.2.4" }
+	],
 	"urn_status": { "@id": "status:published" },
-	"redirect_to": "",
-	"edited_by": "",
+	"edited_by": { "@id": "user:adamt" },
  	"created_by": { "@id": "service:feed_aggregator" },
+	"canonical_id": { "@id": "urn:cite:perseus:author.1.1" },
+	"alt_ids": [ 
+		"tlg1818x01", 
+		"tlg2020x02" 
+	],
+	"related_works": [ "tlg4150.tlg001" ],
 	"created_at": "<%= data[:created_at] %>",
-	"updated_at": "<%= data[:updated_at] %>"
+	"updated_at": "<%= data[:updated_at] %>",
+	"authority_name": "Anacreontea",
+	"mads_file": "PrimaryAuthors/A/Anacreontea/n83-015406.mads.xml"
 }
