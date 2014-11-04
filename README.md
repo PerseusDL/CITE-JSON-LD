@@ -24,7 +24,6 @@ Learn how to build
 ### JSON-LD
 
 * [JSON-LD primer](http://json-ld.org/primer/latest/)
-	* read my notes **PRIMER.md**
 
 * [Identifiers in JSON-LD and RDF](http://manu.sporny.org/2013/rdf-identifiers/)
 

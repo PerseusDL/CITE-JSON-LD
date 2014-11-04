@@ -69,7 +69,7 @@ Here's an author record converted to JSON-LD
 
 	{
 		"@context": {
-			"urn": "http://www.homermultitext.org/cts/rdf#urn:",
+			"urn": "http://data.perseus.org/collections/urn:",
 			"rdf": "http://perseus.org/rdf/",
 			"service": "http://perseus.org/service/",
 			"status": "http://perseus.org/status/",
@@ -195,7 +195,7 @@ Let's look at a concrete example...
 
 	{
 		"@context": {
-			"urn": "http://www.homermultitext.org/cts/rdf#urn:",
+			"urn": "http://data.perseus.org/collections/urn:",
 			"rdf": "http://perseus.org/rdf/",
 			"redirect_to": { "@id": "rdf:redirectTo" }
 		},
@@ -208,13 +208,15 @@ Let's look at a concrete example...
 
 Here's the same data represented after being converted to RDF triples...
 
-	<http://www.homermultitext.org/cts/rdf#urn:cite:perseus:author.1.1> | <http://perseus.org/rdf/redirectTo> | <http://www.homermultitext.org/cts/rdf#urn:cite:perseus:author.1.2>
-	<http://www.homermultitext.org/cts/rdf#urn:cite:perseus:author.1.1> | <http://perseus.org/rdf/redirectTo> | <http://www.homermultitext.org/cts/rdf#urn:cite:perseus:author.2.4>
-
-We'd probably 
+	<http://data.perseus.org/collections/urn:cite:perseus:author.1.1> | <http://perseus.org/rdf/redirectTo> | <http://data.perseus.org/collections/urn:cite:perseus:author.1.2>
+	<http://data.perseus.org/collections/urn:cite:perseus:author.1.1> | <http://perseus.org/rdf/redirectTo> | <http://data.perseus.org/collections/urn:cite:perseus:author.2.4>
 
 ### CITE URNs, Relative IRIs and JSON-LD
+`<http://data.perseus.org/collections/urn:cite:perseus:author.1.1>` is an absolute IRI.
+`<urn:cite:perseus:author.1.1>` is a relative IRI.
 
+JSON-LD supports both but using CTS URN style relative IRIs can be tricky, because of how they use :
+If you'd prefer to see CTS URNs in a relative IRI style in your triplestore you can use special features of JackRDF.
 
 ### Test with static data
 Here's a quick and easy way of testing your JSON-LD.
@@ -222,10 +224,8 @@ Here's a quick and easy way of testing your JSON-LD.
 	cd CITE-JSON-LD/scripts
 	ruby to_rdf.rb /path/to/json-ld/static.json 
 
-### Test with dynamic fake data
-
-#### JackSON
-
+### Test with dynamic fake data and JackSON
+[My workflow](https://github.com/caesarfeta/JackSON/blob/master/docs/TEMPLATES.md).
 
 ### Best practices
 Here's how I like to structure my JSON-LD files.
