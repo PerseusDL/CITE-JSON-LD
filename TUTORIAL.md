@@ -1,7 +1,8 @@
 # JSON-LD & linked-data application development
 
 Welcome!
-I'll give you a quick run-down of how to write JSON-LD templates, which will provide you with a solid foundation for building a linked-data application.
+I'll give you a quick run-down of how to write and test JSON-LD templates, 
+which will provide you with a solid foundation for building a linked-data application.
 Then I'll show you how to build a prototype application with [JackSON](https://github.com/caesarfeta/JackSON).
 
 ## Why use JSON-LD?
@@ -12,7 +13,9 @@ Converting JSON to JSON-LD is worthwhile for one simple reason.
 Once your data has unique universal identifiers, you'll be able to use some fantastic tools to publish it.  These same tools are also a great way for everyone to search and analyze your data, yourself included.
 
 ## Prerequisites
-I'm assuming you have working knowledge of JSON and RDF, and that you know what JSON-LD basically is, but you don't have much experience using it.
+I'm assuming you have working knowledge of JSON and RDF, 
+and that you know what JSON-LD basically is but you don't have much experience using it.
+
 I throw around the words graph, node, edge, SPARQL, and Turtle.
 If you don't know what those mean in the context of linked-data you will be very confused if you keep reading.
 
@@ -27,8 +30,8 @@ Here's a quick synopsis of what's covered in this tutorial.
 	3. Best practices
 2. Building a RESTful API
 	1. General Design
+		1. Documenting API with RAML
 	2. Write data validators
-	3. Document API with RAML
 
 Let's go!
 
@@ -119,8 +122,9 @@ so let me explain them in a bit more detail.
 
 #### "@id"
 "@id" is always used to define an IRI.
-If IRI is a new acronym for you [http://en.wikipedia.org/wiki/Internationalized_resource_identifier](read this.)
+If IRI is a new acronym for you [read this](http://en.wikipedia.org/wiki/Internationalized_resource_identifier).
 It won't take long ;) 
+
 If you've seen RDF in Turtle (.ttl) format...
 
 	<urn:cite:perseus:collection.1> | <http://perseus.org/rdf/updatedAt> | "2013-11-01 21:22:11 -0400"^^<xsd:dateTime>
@@ -131,7 +135,8 @@ An IRI is anything between...
 	<>
 
 Colons in an "@id" value have special properties in JSON-LD.
-A colon signifies you're using a prefix representation of an absolute IRI and therefore your value needs to be expanded. For example when using SPARQL.
+A colon signifies you're using a prefix representation of an absolute IRI and therefore your value needs to be expanded. 
+For example when using SPARQL.
 
 	PREFIX rdf: <http://perseus.org/rdf/>
 	<rdf:updatedAt>
@@ -213,8 +218,8 @@ Here's the same data represented after being converted to RDF triples...
 `<http://data.perseus.org/collections/urn:cite:perseus:author.1.1>` is an absolute IRI.
 `<urn:cite:perseus:author.1.1>` is a relative IRI.
 
-JSON-LD supports both but using CTS URN style relative IRIs can be tricky, because of how they use :
-If you'd prefer to see CTS URNs in a relative IRI style in your triplestore you can use special features of JackRDF.
+JSON-LD supports both but using CITE URN style relative IRIs can be tricky, because of how they use :
+If you'd prefer to see CITE URNs in a relative IRI style in your triplestore you can use [special features of JackRDF](https://github.com/caesarfeta/JackRDF) ( see section titled **CITE URNs and relative IRIs** ).
 
 ### Test with static data
 Here's a quick and easy way of testing your JSON-LD.
@@ -224,6 +229,9 @@ Here's a quick and easy way of testing your JSON-LD.
 
 ### Test with dynamic fake data and JackSON
 [My workflow](https://github.com/caesarfeta/JackSON/blob/master/docs/TEMPLATES.md).
+
+### Test with LINKED dynamic fake data and JackSON
+coming soon!
 
 ### Best practices
 Here's how I like to structure my JSON-LD files.

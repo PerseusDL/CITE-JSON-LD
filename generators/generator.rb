@@ -15,6 +15,11 @@ class Generator
     ndig( rand()*(b-a)+a, n )
   end
   
+  # Random boolean value
+  def rbool
+    rand(2) == 1
+  end
+  
   # Trim float (f) to n digits
   def ndig( f, n )
     Float( "%.#{n}g" % f )
