@@ -2,12 +2,11 @@
 	<%= File.read("#{settings["dir"]}/context.json.erb") %>,
 	"@id": "urn:cite:<%= data[:namespace] %>:<% data[:collection] %>.<%= data[:id] %>",
  	"cite:belongsTo": { "@id": <%= data[:collection_urn] %> },
-	"cite:license": { "@id": <%= data[:license] %>" },
+	"this:license": { "@id": <%= data[:license] %>" },
 	"rdf:label": "<%= data[:label] %>",
 	"rdf:description": "<%= data[:description] %>",
 	"this:upload": { "@id": "urn:cite:<%= data[:namespace] %>:uploads.<% data[:file_id] %>" },
 	"this:keyword": [ <%= data[:keyword]%> ],
 	"user": { "@id": <%= data[:user] %> },
-	"created": null,
-	"updated": null
+	"time": "<%= data[:time] %>"
 }
