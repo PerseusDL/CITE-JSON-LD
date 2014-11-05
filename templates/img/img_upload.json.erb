@@ -1,6 +1,10 @@
 {
 	<%= File.read("#{settings["dir"]}/context.json.erb") %>,
 	"@id": "urn:cite:<%= data[:namespace] %>:uploads.<% data[:file_id] %>",
+	"this:height": <%= data[:height] %>,
+	"this:width": <%= data[:width] %>,
+	"this:filetype": "<%= data[:filetype] %>",
+	"this:src": "<%= data[:src] %>",
 	"exif:brightnessValue": null,
 	"exif:colorSpace": null,
 	"exif:compressedBitsPerPixel": null,
@@ -38,10 +42,6 @@
 	"exif:xResolution": null,
 	"exif:ycbCrPositioning": null,
 	"exif:yResolution": null,
-	"this:height": null,
-	"this:width": null,
-	"this:filetype": null,
-	"this:src": null,
-	"user": { "@id": <%= data[:user] %> },
-	"time": <%= data[:time] %>
+	"user": { "@id": "<%= data[:user] %>" },
+	"time": "<%= data[:time] %>"
 }
