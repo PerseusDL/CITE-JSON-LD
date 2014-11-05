@@ -5,12 +5,8 @@
 		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 		"this": "https://github.com/PerseusDL/CITE-JSON-LD/blob/master/templates/img/SCHEMA.md"
 	},
-	"@id": "urn:cite:<%= data[:namespace] %>:<% data[:collection] %>",
-	"cite:ordered": "<%= data[:ordered] %>",
-	"rdf:label": "<%= data[:label] %>",
-	"rdf:description": "<%= data[:description] %>",
-	"this:keyword": [ <%= data[:keyword] %>],
-	"order": <%= data[:img_urns] %>,
+	"@id": "urn:cite:<%= data[:namespace] %>:resized.<%= data[:id] %>",
+	"this:upload": { "@id": <%= data[:upload] %> }
 	"creator": null,
 	"created": null,
 	"updated": null

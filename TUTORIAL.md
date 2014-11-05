@@ -32,9 +32,7 @@ Here's a quick synopsis of what's covered in this tutorial.
 
 Let's go!
 
-
 # Data Modelling
-
 ## Model data in JSON
 First step is to model your data in JSON.
 I'm going to assume you've done this before.

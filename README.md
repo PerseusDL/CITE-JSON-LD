@@ -2,9 +2,6 @@ CITE-JSON-LD
 ============
 JSON-LD templates that implement the CITE Collection protocol
 
-## Tutorial
-Learn how to build 
-
 ## Directories explained
 
 * **/templates**
@@ -55,12 +52,6 @@ Learn how to build
 * [CITE Collection Manager Proxy Service ](https://bitbucket.org/ryanfb/cite-collection-manager) Proxy service for managing access to the Cite Collection Editor so that individual users don't need to be granted access to the Fusion Tables. Note that this is forked and updated for latest Google API code and to fix an auth timeout problem at
 
 * [CITE Collection Manager](https://github.com/balmas/cite-collection-manager)
-
-### Why it's so hard to use CTS URN as nodes
-
-* [https://github.com/json-ld/json-ld.org/issues/46](https://github.com/json-ld/json-ld.org/issues/46)
-
-A fix is in the works in JackRDF.
 
 ## templates
  
@@ -122,6 +113,9 @@ If you receive this error...
 Run...
 
 	gem install rdf-turtle
+
+## Tutorial
+Learn the art of building a JSON-LD template with [this tutorial](https://github.com/PerseusDL/CITE-JSON-LD/blob/master/TUTORIAL.md).
 
 ## Further testing
 I've been using JackSON to test collections of JSON-LD templates.
