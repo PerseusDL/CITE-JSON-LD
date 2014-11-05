@@ -1,3 +1,4 @@
+require 'faker'
 class Generator
   # Random lower-case string n letters long
   def rstring( n )
@@ -16,6 +17,28 @@ class Generator
   
   # Trim float (f) to n digits
   def ndig( f, n )
-     Float( "%.#{n}g" % f )
-   end
+    Float( "%.#{n}g" % f )
+  end
+   
+  # Array of random strings of length n 
+  # where n is between a and b
+  def rawords( a, b )
+    n = rint( a, b )
+    words = []
+    n.times do
+      words.push Faker::Internet.domain_word
+    end
+    words
+  end
+   
+  # Array of random urls of length n 
+  # where n is between a and b
+  def raurls( a, b )
+    n = rint( a, b )
+    urls = []
+    n.times do
+      urls.push Faker::Internet.url
+    end
+    urls
+  end
 end
