@@ -6,7 +6,11 @@
 		"this": "https://github.com/PerseusDL/CITE-JSON-LD/blob/master/templates/img/SCHEMA.md"
 	},
 	"@id": "urn:cite:<%= data[:namespace] %>:resized.<%= data[:id] %>",
-	"this:upload": { "@id": <%= data[:upload] %> }
+	"this:upload": { "@id": <%= data[:upload] %> },
+	"this:height": null,
+	"this:width": null,
+	"this:filetype": null,
+	"this:src": null,
 	"creator": null,
 	"created": null,
 	"updated": null

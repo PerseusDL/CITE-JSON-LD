@@ -1,13 +1,25 @@
-# Image Collections
+# img collections
 
-## upload
+## app
+Appliction that created record.
 
-## resize
-
-## keyword
+## filetype
+Image filetype.
 
 ## height
+Image height.
+
+## keyword
+A keyword.
+
+## src
+The URL to an image file.
+
+## resize
+URN to resized image
+
+## upload
+Image upload.
 
 ## width
-
-## file_type
+Image width.
