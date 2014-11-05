@@ -1,14 +1,10 @@
 {
-	"@context": {
-		"urn": "http://data.perseus.org/collections/urn:",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"this": "https://github.com/PerseusDL/CITE-JSON-LD/blob/master/templates/img/SCHEMA.md"
-	},
+	<%= File.read("#{settings["dir"]}/context.json.erb") %>,
 	"@id": "urn:cite:<%= data[:namespace] %>:licenses.<%= data[:id] %>",
 	"rdf:label": "<%= data[:label] %>",
 	"rdf:description": "<%= data[:description] %>",
 	"this:keyword": [ <%= data[:keyword]%> ],
-	"creator": null,
+	"user": { "@id": <%= data[:user] %> },
 	"created": null,
 	"updated": null
 }

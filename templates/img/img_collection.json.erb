@@ -1,17 +1,12 @@
 {
-	"@context": {
-		"urn": "http://data.perseus.org/collections/urn:",
-		"cite": "http://www.homermultitext.org/cite/rdf/",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"this": "https://github.com/PerseusDL/CITE-JSON-LD/blob/master/templates/img/SCHEMA.md"
-	},
+	<%= File.read("#{settings["dir"]}/context.json.erb") %>,
 	"@id": "urn:cite:<%= data[:namespace] %>:<% data[:collection] %>",
 	"cite:ordered": "<%= data[:ordered] %>",
 	"rdf:label": "<%= data[:label] %>",
 	"rdf:description": "<%= data[:description] %>",
 	"this:keyword": [ <%= data[:keyword] %>],
 	"order": <%= data[:img_urns] %>,
-	"creator": null,
+	"user": { "@id": <%= data[:user] %> },
 	"created": null,
 	"updated": null
 }

@@ -1,19 +1,10 @@
 {
-	"@context": {
-		"urn": "http://data.perseus.org/collections/urn:",
-		"cite": "http://www.homermultitext.org/cite/rdf/",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"time": {
-			"@id": "http://www.w3.org/TR/xmlschema11-2/#dateTime",
-			"@type": "xsd:dateTime"
-		}
-	},
+	<%= File.read("#{settings["dir"]}/context.json.erb") %>,
 	"@id": "urn:cite:<%= data[:namespace] %>:<%= data[:collection] %>.<%= data[:img] %>,<%= data[:x] %>,<%= data[:y] %>,<%= data[:width] %>,<%= data[:height] %>",
 	"rdf:label": "<%= data[:label] %>",
 	"rdf:description": "<%= data[:description] %>",
 	"this:app": "<%= data[:app] %>",
-	"lang": "<%= data[:lang] %>",
-	"creator": null,
-	"created": null,
-	"updated": null
+	"this:lang": "<%= data[:lang] %>",
+	"user": { "@id": "user:<%= data[:user] %>" },
+	"time": "<%= data[:time] %>"
 }

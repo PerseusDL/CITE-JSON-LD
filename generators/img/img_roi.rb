@@ -14,6 +14,6 @@ gen = Generator.new
   :height => gen.rfloat(0.1,1),
   :app => Faker::Internet.url,
   :lang => Faker::Internet.domain_word,
-  :author => Faker::Internet.user_name,
+  :user => Faker::Internet.user_name,
   :time => Faker::Time.between( Date.today-365, Time.now, :all )
 }
