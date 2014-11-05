@@ -6,6 +6,8 @@ JSON-LD templates that implement the CITE Collection protocol
 
 * **/templates**
 	* stores working JSON-LD templates
+* **/validators**
+	* stores JSON-LD validators
 * **/samples**
 	* for inspiration purposes
 	* **/samples/json**
