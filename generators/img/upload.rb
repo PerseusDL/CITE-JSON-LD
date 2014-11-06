@@ -1,19 +1,17 @@
 require 'faker'
 require 'date'
+require_relative '../fake_filetype.rb'
+require_relative '../fake_user.rb'
 require_relative '../generator.rb'
 gen = Generator.new
 @data = {
-  :namespace => Faker::Internet.domain_word,
+  :id => Generator.rid(11),
+  :namespace => 'perseus',
   :collection => Faker::Internet.domain_word,
-  :label => Faker::Lorem.word,
-  :description => Faker::Lorem.sentence,
-  :img => Generator.rint(0,100),
-  :x => Generator.rfloat(0.1,1),
-  :y => Generator.rfloat(0.1,1),
-  :width => Generator.rfloat(0.1,1),
-  :height => Generator.rfloat(0.1,1),
-  :app => Faker::Internet.url,
-  :lang => Faker::Internet.domain_word,
-  :user => Faker::Internet.user_name,
+  :width => Generator.rint(250,1000),
+  :height => Generator.rint(250,1000),
+  :filetype => FakeFiletype.get,
+  :src => Faker::Internet.url,
+  :user => FakeUser.get,
   :time => Faker::Time.between( Date.today-365, Time.now, :all )
 }

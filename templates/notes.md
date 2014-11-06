@@ -1,11 +1,9 @@
-### img/img_roi.json.erb
-URN for a collection image (img) region of interest (roi).
+#img
+Testing process
 
-### test/hmt_rdf.json.erb
-JSON-LD representation of all RDF identifiers found in [http://beta.hpcc.uh.edu/hmt/archival-publications/hmt-rdf-2014.1.zip](http://beta.hpcc.uh.edu/hmt/archival-publications/hmt-rdf-2014.1.zip) > *.ttl
-
-### test/cite_property.json.erb
-A CITE Property
-
-### test/cite_collection.json.erb
-CITE collection wrapper
+	cd /var/www/JackSON
+	rake data:destroy
+	rake data:fake['cite/templates/img/collection.json.erb','cite/generators/img/collection.rb',50,'collection']
+	rake data:fake['cite/templates/img/upload.json.erb','cite/generators/img/upload.rb',1000,'upload']
+	rake data:fake['cite/templates/img/item.json.erb','cite/generators/img/item.rb',1000,'item']
+	rake triple:make
