@@ -55,6 +55,8 @@ JSON-LD templates that implement the CITE Collection protocol
 
 * [CITE Collection Manager](https://github.com/balmas/cite-collection-manager)
 
+* [SCHEMAS](https://github.com/cite-architecture/cite)
+
 ## templates
  
 Use ERB notation in templates
