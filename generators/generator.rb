@@ -49,13 +49,7 @@ class Generator
   
   # Random alphanumeric id of length n
   def self.rid( n )
-    s = ''
-    n.times do
-      l = rstring(1)
-      l = l.upcase if rbool
-      s = s+l
-    end
-    s
+    Array.new(n){[*'0'..'9', *'a'..'z', *'A'..'Z'].sample}.join
   end
   
 end

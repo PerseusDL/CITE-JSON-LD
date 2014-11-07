@@ -227,32 +227,11 @@ Here's a quick and easy way of testing your JSON-LD.
 	cd CITE-JSON-LD/scripts
 	ruby to_rdf.rb /path/to/json-ld/static.json 
 
+Once your happy with the triples produced with static JSON-LD files,
+you'll want to produce templates and generators to...
+
 ### Test with dynamic fake data and JackSON
 [My workflow](https://github.com/caesarfeta/JackSON/blob/master/docs/TEMPLATES.md).
-
-### Test with LINKED dynamic fake data and JackSON
-coming soon!
-
-### Best practices
-Here's how I like to structure my JSON-LD files.
-I find it makes it easier to check my work,
-and it makes templating easier...
-"@context" objects can be reused across templates, etc.
-
-	{
-		"@context": {
-			PREFIXES
-			MAPPINGS
-				TO ARRAY URN
-				TO URN
-				TO ARRAY TYPED
-				TO TYPED
-				TO ARRAY STRING LITERAL
-				TO STRING LITERAL
-		},
-		"@id": "urn",
-		KEYS in same order as MAPPINGS
-	}
 
 # Building a RESTful API
 coming soon!

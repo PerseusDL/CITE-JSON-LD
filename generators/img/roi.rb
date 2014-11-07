@@ -1,10 +1,10 @@
 require 'faker'
-require 'date'
 require_relative '../generator.rb'
+require_relative '../json_id.rb'
+require_relative '../fake_user.rb'
 gen = Generator.new
 @data = {
-  :namespace => Faker::Internet.domain_word,
-  :collection => Faker::Internet.domain_word,
+  :item => JsonId.get('/var/www/JackSON/data/item'),
   :label => Faker::Lorem.word,
   :description => Faker::Lorem.sentence,
   :img => Generator.rint(0,100),
@@ -14,6 +14,6 @@ gen = Generator.new
   :height => Generator.rfloat(0.1,1),
   :app => Faker::Internet.url,
   :lang => Faker::Internet.domain_word,
-  :user => Faker::Internet.user_name,
+  :user => FakeUser.get,
   :time => Faker::Time.between( Date.today-365, Time.now, :all )
 }

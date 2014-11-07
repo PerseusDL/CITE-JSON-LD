@@ -1,6 +1,10 @@
 {
 	<%= File.read("#{settings["dir"]}/context.json.erb") %>,
-	"@id": "urn:cite:<%= data[:namespace] %>:<%= data[:collection] %>.<%= data[:img] %>,<%= data[:x] %>,<%= data[:y] %>,<%= data[:width] %>,<%= data[:height] %>",
+	"@id": "<%= data[:item] %>,<%= data[:x] %>,<%= data[:y] %>,<%= data[:width] %>,<%= data[:height] %>",
+	"this:roi_x": "<%= data[:x] %>",
+	"this:roi_y": "<%= data[:y] %>",
+	"this:roi_width": "<%= data[:width] %>",
+	"this:roi_height": "<%= data[:height] %>",
 	"rdf:label": "<%= data[:label] %>",
 	"rdf:description": "<%= data[:description] %>",
 	"this:app": "<%= data[:app] %>",
