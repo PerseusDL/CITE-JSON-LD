@@ -23,15 +23,13 @@ If you don't know what those mean in the context of linked-data you will be very
 ## The process
 Here's a quick synopsis of what's covered in this tutorial.
 
-1. Data Modelling
-	1. Model data in JSON
-	2. Convert JSON into JSON-LD
-		1. Test with static data
-		2. Test with dynamic fake data
+1. Model data in JSON
+2. Convert JSON into JSON-LD
+	1. Test with static data
+	2. Test with dynamic fake data
 
 Let's go!
 
-# Data Modelling
 ## Model data in JSON
 First step is to model your data in JSON.
 I'm going to assume you've done this before.
