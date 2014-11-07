@@ -3,7 +3,6 @@
 Welcome!
 I'll give you a quick run-down of how to write and test JSON-LD templates, 
 which will provide you with a solid foundation for building a linked-data application.
-Then I'll show you how to build a prototype application with [JackSON](https://github.com/caesarfeta/JackSON).
 
 ## Why use JSON-LD?
 Converting JSON to JSON-LD is worthwhile for two simple reasons.
@@ -29,11 +28,6 @@ Here's a quick synopsis of what's covered in this tutorial.
 	2. Convert JSON into JSON-LD
 		1. Test with static data
 		2. Test with dynamic fake data
-	3. Best practices
-2. Building a RESTful API
-	1. General Design
-		1. Documenting API with RAML
-	2. Write data validators
 
 Let's go!
 
@@ -396,6 +390,4 @@ Using a variable **n** and a coefficient allow me to create a dataset with the '
 
 That's it!
 Once the build script runs check in with Fuseki and see your fake dataset!
-
-# Building a RESTful API
 
