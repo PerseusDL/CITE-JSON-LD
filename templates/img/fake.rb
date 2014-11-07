@@ -3,7 +3,7 @@ def fake templ,n
   puts `rake data:fake['cite/templates/img/#{templ}.json.erb','cite/generators/img/#{templ}.rb',#{n},'#{templ}']`
 end 
 # How many do you need?
-n = 1000
+n = 100
 # Build fake data
 fake 'license', 25
 fake 'collection', 50

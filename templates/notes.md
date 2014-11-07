@@ -11,7 +11,7 @@
 
 		Your custom schema
 
-4. build.rb
+4. fake.rb
 
 		Build test data:
-		ruby build.rb
+		ruby fake.rb
