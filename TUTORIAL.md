@@ -389,5 +389,8 @@ It just runs rake tasks in the right sequence.
 Using a variable **n** and a coefficient allow me to create a dataset with the 'imagined realistic' proportions, and I can scale up my dataset for different testing purposes easily.
 
 That's it!
-Once the build script runs check in with Fuseki and see your fake dataset!
+Once the build script runs check in with Fuseki...
 
+	http://localhost:4321/ds/query?query=select+%3Fs+%3Fp+%3Fo%0D%0Awhere+%7B+%3Fs+%3Fp+%3Fo+%7D&output=text&stylesheet=
+
+... and see your fake dataset!
