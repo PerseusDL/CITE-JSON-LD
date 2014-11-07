@@ -217,16 +217,16 @@ Here's the same data represented after being converted to RDF triples...
 JSON-LD supports both but using CITE URN style relative IRIs can be tricky, because of how they use :
 If you'd prefer to see CITE URNs in a relative IRI style in your triplestore you can use [special features of JackRDF](https://github.com/caesarfeta/JackRDF) ( see section titled **CITE URNs and relative IRIs** ).
 
-### Test with static data
+## Test with static data
 Here's a quick and easy way of testing your JSON-LD.
 
-	cd CITE-JSON-LD/scripts
+	cd scripts
 	ruby to_rdf.rb /path/to/json-ld/static.json 
 
 Once you are happy with the triples produced with static JSON-LD files,
 you'll want to produce templates and generators to...
 
-### Test with dynamic fake data and JackSON
+## Test with dynamic fake data and JackSON
 [If all you need is a quick reference...](https://github.com/caesarfeta/JackSON/blob/master/docs/TEMPLATES.md).
 
 You want fake data that is "realistic".
@@ -361,9 +361,10 @@ I pluck one out at random...
 
 I wrote this so my fake datasets can realistically reference themselves.
 
-When data is self-referencing it means the sequence of data creation matters.
+When data is self-referencing it means the sequence of data creation matters, i.e.
 I can't create an item which references a collection before the collection exists.
-I create a build script to make sure I get the sequence correct and save it with the templates I'm building:
+I create a build script to make sure I get the sequence correct.
+I keep it near the templates I'm building:
 
 	templates/img/fake.rb
 
@@ -386,11 +387,14 @@ It looks something like this:
 	puts `rake triple:make`
 
 It just runs rake tasks in the right sequence.
-Using a variable **n** and a coefficient allow me to create a dataset with the 'imagined realistic' proportions, and I can scale up my dataset for different testing purposes easily.
+Using a variable **n** and a coefficient allow me to create a dataset with 'imagined realistic' proportions, and I can scale up my dataset for different testing purposes easily.
 
 That's it!
 Once the build script runs check in with Fuseki...
 
 	http://localhost:4321/ds/query?query=select+%3Fs+%3Fp+%3Fo%0D%0Awhere+%7B+%3Fs+%3Fp+%3Fo+%7D&output=text&stylesheet=
 
-... and see your fake dataset!
+... and to see my fake dataset!
+
+Once I'm happy with my data-model I'll start work building an application API!
+Documentation on how to do that is coming soon!
