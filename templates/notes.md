@@ -1,4 +1,4 @@
-# structure
+# folder structure
 1. context.json.erb 
 
 		Shared JSON-LD "@context" object
@@ -11,6 +11,7 @@
 
 		Your custom schema
 
-4. build.sh
+4. build.rb
 
-		Build test data
+		Build test data:
+		ruby build.rb
