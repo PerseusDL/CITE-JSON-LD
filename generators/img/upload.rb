@@ -1,5 +1,4 @@
 require 'faker'
-require 'date'
 require_relative '../fake_filetype.rb'
 require_relative '../fake_user.rb'
 require_relative '../generator.rb'

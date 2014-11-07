@@ -3,6 +3,6 @@
 	"@id": "urn:cite:<%= data[:namespace] %>:licenses.<%= data[:id] %>",
 	"rdf:label": "<%= data[:label] %>",
 	"rdf:description": "<%= data[:description] %>",
-	"user": { "@id": <%= data[:user] %> },
+	"user": { "@id": "user:<%= data[:user] %>" },
 	"time": "<%= data[:time] %>"
 }
