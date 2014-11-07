@@ -9,7 +9,7 @@ require_relative '../fake_user.rb'
   :keywords => Generator.rawords(1,10),
   :collection_urn => JsonId.get('/var/www/JackSON/data/collection'),
   :upload_urn => JsonId.get('/var/www/JackSON/data/upload'),
-  :license => Faker::Lorem.word,
+  :license => JsonId.get('/var/www/JackSON/data/license'),
   :user => FakeUser.get,
   :time => Faker::Time.between( Date.today-365, Time.now, :all )
 }

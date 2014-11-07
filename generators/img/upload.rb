@@ -3,7 +3,6 @@ require 'date'
 require_relative '../fake_filetype.rb'
 require_relative '../fake_user.rb'
 require_relative '../generator.rb'
-gen = Generator.new
 @data = {
   :id => Generator.rid(11),
   :namespace => 'perseus',

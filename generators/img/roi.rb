@@ -2,7 +2,6 @@ require 'faker'
 require_relative '../generator.rb'
 require_relative '../json_id.rb'
 require_relative '../fake_user.rb'
-gen = Generator.new
 @data = {
   :item => JsonId.get('/var/www/JackSON/data/item'),
   :label => Faker::Lorem.word,
