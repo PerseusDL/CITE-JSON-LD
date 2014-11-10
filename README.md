@@ -32,6 +32,8 @@ JSON-LD templates that implement the CITE Collection protocol
 
 * [Perseus Myth Commentary Collection Item Example](http://data.perseus.org/collections/urn:cite:perseus:mythcomm.117.1/oac) (view the source to see the raw RDF/XML) - this is an example of a CITE collection item which contains an OA data field
 
+* [Published OA](http://www.openannotation.org/spec/core/publishing.html)
+
 #### Homer Multitext
 * [Index of /hmt/archival-publications](http://beta.hpcc.uh.edu/hmt/archival-publications/) Archived zip files with plenty of XML examples.
 
