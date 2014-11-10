@@ -26,13 +26,17 @@ JSON-LD templates that implement the CITE Collection protocol
 
 * [Identifiers in JSON-LD and RDF](http://manu.sporny.org/2013/rdf-identifiers/)
 
+### OA
+* [Published OA](http://www.openannotation.org/spec/core/publishing.html)
+
+### Provenance
+* [PROV-Overview W3C Spect](http://www.w3.org/TR/prov-overview/)
+
 ### CITE
 #### Perseus
 * [Perseus CITE Collection Capabilities Files](https://github.com/PerseusDL/cite_collections/tree/master/src/capabilities) XML examples.
 
 * [Perseus Myth Commentary Collection Item Example](http://data.perseus.org/collections/urn:cite:perseus:mythcomm.117.1/oac) (view the source to see the raw RDF/XML) - this is an example of a CITE collection item which contains an OA data field
-
-* [Published OA](http://www.openannotation.org/spec/core/publishing.html)
 
 #### Homer Multitext
 * [Index of /hmt/archival-publications](http://beta.hpcc.uh.edu/hmt/archival-publications/) Archived zip files with plenty of XML examples.
@@ -48,7 +52,6 @@ JSON-LD templates that implement the CITE Collection protocol
 * [CITE Collections, Annotations, Triples and Named Graphs](https://docs.google.com/document/d/1765E-StEK-Fv0yjk05pprMVdaVW8F-oc8dl2T0yhj20/edit?usp=sharing) 
 
 ### Sample implementations
-
 * [CITE Collection Service - Google Fusion](https://bitbucket.org/neelsmith/citefusioncoll) Groovy Servlet based implementation of the CITE Collection Service API which uses Google Fusion Tables as a back-end data store.
 
 * [CITE Collection Editor](https://bitbucket.org/ryanfb/cite-collection-editor) Client-Side lightweight editor for CITE Collections stored in Google Fusion tables
@@ -60,7 +63,6 @@ JSON-LD templates that implement the CITE Collection protocol
 * [SCHEMAS](https://github.com/cite-architecture/cite)
 
 ## templates
- 
 Use ERB notation in templates
 
 	{
