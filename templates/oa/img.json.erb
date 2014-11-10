@@ -1,0 +1,35 @@
+{
+	<%= File.read("#{settings["dir"]/context.json/erb}") %>
+	"@id": "<%= data[:urn] %>",
+	"@type": "oa:Annotation",
+	
+	"annotatedAt": "<%= data[:time] %>",
+	"annotatedBy": {
+	    "@id": "user:<%= data[:email] %>"
+	    "@type": "foaf:Person", 
+	    "mbox": {
+	        "@id": "<%= data[:email] %>"
+	    }, 
+	    "name": "<%= data[:name] %>"
+	},
+	
+	"hasBody": {
+	    "@id": "<%= data[:body_urn] %>", 
+	    "@type": ["cnt:ContentAsText", "dctypes:Text"], 
+	    "chars": "<%= data[:chars] %>"
+	}, 
+	"hasTarget": {
+	    "@id": "<%= data[:target_urn] %>",
+	    "@type": "oa:SpecificResource", 
+	    "hasSelector": {
+	        "@id": "<%= data[:selector_urn] %>",
+	        "@type": "oa:FragmentSelector", 
+	        "conformsTo": "http://www.w3.org/TR/media-frags/", 
+	        "value": "xywh=<%= data[:x] %>,<%= data[:y] %>,<%= data[:w] %>,<%= data[:h] %>"
+	    }, 
+	    "hasSource": {
+	        "@id": "<%= data[:src] %>",
+	        "@type": "dctypes:Image"
+	    }
+	}
+}

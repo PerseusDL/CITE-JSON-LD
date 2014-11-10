@@ -32,8 +32,6 @@ Let's go!
 
 ## Model data in JSON
 First step is to model your data in JSON.
-I'm going to assume you've done this before.
-You probably have some JSON files lying around.
 
 Here's an example.
 
@@ -60,7 +58,7 @@ Its structure is very simple, which makes it a good foundation to teach you how 
 ## Convert JSON into JSON-LD
 I'll show you how to use a small subset of JSON-LD's features to convert JSON into valid JSON-LD.
 
-Here's an author record converted to JSON-LD
+Here's an author record converted to JSON-LD for example purposes.
 
 	{
 		"@context": {
@@ -231,13 +229,13 @@ You want fake data that is "realistic".
 This means the fake data needs to have the right proportions, the right datatype, and reference itself properly.
 
 Here's how I generate "realistic" fake data
-( [JackRDF](https://github.com/caesarfeta/JackRDF) needs to be installed and its bundled Fuseki server must be running ).
+For this to work [JackRDF](https://github.com/caesarfeta/JackRDF) needs to be installed and its bundled Fuseki server must be running.
 
-I write JSON-LD templates using ERB and keep them in...
+I write JSON-LD templates using ERB.  I keep them in...
 
 	/templates
 
-I write fake-data generators and keep them in...
+I keep my fake-data generators in...
 
 	/generators
 
