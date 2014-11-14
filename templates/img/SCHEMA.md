@@ -4,6 +4,9 @@ img collections
 # app
 Application that created record.
 
+# type
+The type of record.
+
 # filetype
 Image filetype.
 

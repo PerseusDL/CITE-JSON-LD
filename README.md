@@ -16,6 +16,8 @@ JSON-LD templates that implement the CITE Collection protocol
 		* stores example CITE Collection data represented in other flat-file formats.
 * **/scripts**
 	* handy scripts!
+* **/sparql**
+	* SPARQL queries.
 * **/generators**
 	* test data generators
 

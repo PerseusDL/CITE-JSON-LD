@@ -1,0 +1,12 @@
+PREFIX this: <https://github.com/PerseusDL/CITE-JSON-LD/blob/master/templates/img/SCHEMA.md#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xml: <http://www.w3.org/TR/xmlschema11-2/#>
+SELECT ?s ?label ?desc ?time ?user ?keyword
+WHERE { 
+	?s this:type 'collection'; 
+	OPTIONAL { ?s rdf:label ?label . }
+	OPTIONAL { ?s rdf:description ?desc . }
+	OPTIONAL { ?s xml:dateTime ?time . }
+	OPTIONAL { ?s <http://data.perseus.org/sosol/users/> ?user . }
+	OPTIONAL { ?s this:keyword ?keyword }
+}
