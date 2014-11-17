@@ -3,7 +3,6 @@
 	"@id": "<%= data[:collection_urn] %>.<%= data[:id] %>",
 	"rdf:label": "<%= data[:label] %>",
 	"rdf:description": "<%= data[:description] %>",
- 	"cite:belongsTo": { "@id": "<%= data[:collection_urn] %>" },
 	"this:license": { "@id": "<%= data[:license] %>" },
 	"this:upload": { "@id": "<%= data[:upload_urn] %>" },
 	"this:keyword": <%= data[:keywords] %>,

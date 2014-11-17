@@ -15,4 +15,13 @@ class JsonId
     json['@id']
   end
   
+  # Retrieve n @ids from a random JSON-LD files in path
+  def self.ids n, path
+    ids = []
+    n.times do
+      ids.push self.get( path )
+    end
+    ids
+  end
+  
 end
