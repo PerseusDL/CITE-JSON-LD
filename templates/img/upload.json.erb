@@ -1,6 +1,9 @@
 {
 	<%= File.read("#{settings["dir"]}/context.json.erb") %>,
 	"@id": "urn:cite:<%= data[:namespace] %>:uploads.<%= data[:id] %>",
+	"this:type": "upload",
+	"rdf:label": "<%= data[:label] %>",
+	"rdf:description": "<%= data[:description] %>",
 	"this:height": <%= data[:height] %>,
 	"this:width": <%= data[:width] %>,
 	"this:filetype": "<%= data[:filetype] %>",
@@ -43,5 +46,5 @@
 	"exif:ycbCrPositioning": null,
 	"exif:yResolution": null,
 	"user": { "@id": "user:<%= data[:user] %>" },
-	"time": "<%= data[:time] %>"
+	"dateTime": "<%= data[:time] %>"
 }
