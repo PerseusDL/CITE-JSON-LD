@@ -10,6 +10,6 @@ fake 'collection', 50
 fake 'upload', n
 fake 'resize', n*5
 fake 'item', n
-fake 'roi', n*10
+fake 'annotation', n*10
 # Build the triples
 puts `rake triple:make`

@@ -1,7 +1,8 @@
 {
 	<%= File.read("#{settings["dir"]}/context.json.erb") %>,
 	"@id": "urn:cite:<%= data[:namespace] %>:resized.<%= data[:id] %>",
-	"this:upload": { "@id": <%= data[:upload] %> },
+	"this:type": "resize",
+	"this:upload": { "@id": "<%= data[:upload] %>" },
 	"this:height": <%= data[:height] %>,
 	"this:width": <%= data[:width] %>,
 	"this:filetype": "<%= data[:filetype] %>",

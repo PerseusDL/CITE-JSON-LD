@@ -1,6 +1,7 @@
 {
 	<%= File.read("#{settings["dir"]}/context.json.erb") %>,
 	"@id": "<%= data[:item] %>,<%= data[:x] %>,<%= data[:y] %>,<%= data[:width] %>,<%= data[:height] %>",
+	"this:type": "annotation",
 	"roi_x": "<%= data[:x] %>",
 	"roi_y": "<%= data[:y] %>",
 	"roi_width": "<%= data[:width] %>",
@@ -10,5 +11,5 @@
 	"this:app": "<%= data[:app] %>",
 	"this:lang": "<%= data[:lang] %>",
 	"user": { "@id": "user:<%= data[:user] %>" },
-	"time": "<%= data[:time] %>"
+	"dateTime": "<%= data[:time] %>"
 }

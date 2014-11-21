@@ -1,11 +1,12 @@
 {
 	<%= File.read("#{settings["dir"]}/context.json.erb") %>,
 	"@id": "<%= data[:collection_urn] %>.<%= data[:id] %>",
+	"this:type": "item",
 	"rdf:label": "<%= data[:label] %>",
 	"rdf:description": "<%= data[:description] %>",
 	"this:license": { "@id": "<%= data[:license] %>" },
 	"this:upload": { "@id": "<%= data[:upload_urn] %>" },
 	"this:keyword": <%= data[:keywords] %>,
 	"user": { "@id": "user:<%= data[:user] %>" },
-	"time": "<%= data[:time] %>"
+	"dateTime": "<%= data[:time] %>"
 }
