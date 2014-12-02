@@ -1,6 +1,7 @@
 {
 	<%= File.read("#{settings["dir"]}/context.json.erb") %>,
 	"@id": "<%= data[:item] %>,<%= data[:x] %>,<%= data[:y] %>,<%= data[:width] %>,<%= data[:height] %>",
+	"cite:belongsTo": { "@id": "<%= data[:item] %>" },
 	"this:type": "annotation",
 	"roi_x": "<%= data[:x] %>",
 	"roi_y": "<%= data[:y] %>",
