@@ -2,6 +2,7 @@
 	<%= File.read("#{settings["dir"]}/context.json.erb") %>,
 	"@id": "<%= data[:collection_urn] %>.<%= data[:id] %>",
 	"this:type": "item",
+	"cite:belongsTo": { "@id": "<%= data[:collection_urn] %>" },
 	"rdf:label": "<%= data[:label] %>",
 	"rdf:description": "<%= data[:description] %>",
 	"this:license": { "@id": "<%= data[:license] %>" },

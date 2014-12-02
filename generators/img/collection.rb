@@ -4,7 +4,6 @@ require_relative '../generator.rb'
 require_relative '../fake_user.rb'
 require_relative '../json_id.rb'
 @data = {
-  :type => 'collection',
   :namespace => 'perseus',
   :collection => Faker::Internet.domain_word,
   :label => Faker::Lorem.word.capitalize,
