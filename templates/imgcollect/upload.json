@@ -6,7 +6,6 @@
 	"dct": "http://purl.org/dc/terms/",
         "exif": "http://www.kanzaki.com/ns/exif#",
 	"this": "https://github.com/PerseusDL/CITE-JSON-LD/blob/master/templates/img/SCHEMA.md#",
-	"user": "http://data.perseus.org/sosol/users/",
 	"roi_x": {
 		"@id": "this:roi_x",
 		"@type": "xs:float"
@@ -34,6 +33,7 @@
 	"rdf:description": "",
 	"dct:creator": { "@id": "" },
 	"dct:created": "",
+        "dct:publisher" : "",
 	"dct:references": { "@id":"" },
 	"cite:license": { "@id": "" },
 	"this:height": "",
