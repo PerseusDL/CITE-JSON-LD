@@ -11,7 +11,7 @@
 	"cite:belongsTo": { "@id": "" },
 	"rdf:label": "",
 	"rdf:description": "",
-	"crm:P138_represents": "",
+	"crm:P138_represents": { "@id" : "" },
 	"cite:license": { "@id": "" },
 	"dct:references": { "@id": "" },
 	"dct:creator": { "@id": "" },
